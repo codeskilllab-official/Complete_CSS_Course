@@ -1,0 +1,40 @@
+/* Universal Selector */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+}
+
+/* Element Selector */
+
+h1 {
+    color: rgb(144, 33, 185);
+}
+
+p {
+    color: rgb(0, 106, 255);
+    font-size: 20px;
+}
+
+/* ID & Class Selector */
+
+.heading {
+    color: green;
+}
+#para {
+    color: rgb(255, 0, 144);
+}
+
+/* Group Selecotor */
+
+h1, p {
+    color: blue;
+}
+
+/* Descendant Selector */
+
+div p {
+    color: red;
+}
