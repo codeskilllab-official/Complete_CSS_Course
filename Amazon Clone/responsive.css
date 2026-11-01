@@ -1,0 +1,585 @@
+/* Moto G4 aur chhoti screens */
+@media (max-width: 600px) {
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  /* Upar ka header */
+  .navbar {
+    height: auto;
+    padding: 5px 8px;
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    grid-template-areas:
+      "logo signin cart"
+      "search search search"
+      "address address address";
+    gap: 6px;
+  }
+
+  .navbar > a:first-child {
+    grid-area: logo;
+  }
+
+  .logo {
+    width: 105px;
+    height: 43px;
+  }
+
+  /* Mobile par language aur Returns ko chhupao */
+  .anchor-lang,
+  .anchor-return {
+    display: none;
+  }
+
+  /* Deliver to India wali row */
+  .anchor-address {
+    grid-area: address;
+    display: block;
+    color: white;
+  }
+
+  .nav-address {
+    width: 100%;
+    height: 38px;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    text-align: left;
+  }
+
+  .deliver {
+    font-size: 13px;
+  }
+
+  .add-icon {
+    font-size: 15px;
+  }
+
+  .india {
+    font-size: 14px;
+  }
+
+  /* Sign in aur cart */
+  .navbar > a:nth-of-type(4) {
+    grid-area: signin;
+  }
+
+  .navbar > a:nth-of-type(6) {
+    grid-area: cart;
+  }
+
+  .nav-cart {
+    width: auto;
+    height: 43px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-signin {
+    display: none;
+  }
+
+  .nav-cart {
+    font-size: 22px;
+  }
+
+  .cart {
+    padding-top: 1px;
+    font-size: 12px;
+  }
+
+  /* Search ko poori width do */
+  .nav-search {
+    grid-area: search;
+    display: flex;
+    width: 100%;
+  }
+
+  .nav-select {
+    height: 42px;
+    flex-shrink: 0;
+  }
+
+  input {
+    width: 100%;
+    min-width: 0;
+    height: 42px;
+    flex: 1;
+    font-size: 15px;
+  }
+
+  .search-icon {
+    height: 42px;
+    flex-shrink: 0;
+  }
+
+  /* Neeche ke menu links ek line mein side-scroll honge */
+  .nav-sec {
+    height: 42px;
+    padding: 8px;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .menu-icon {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: max-content;
+  }
+
+  .menu-heading {
+    display: flex;
+    gap: 14px;
+  }
+
+  .menu-heading p {
+    padding-left: 0;
+    font-size: 14px;
+  }
+
+  /* Upar wale bade image cards: sirf ye row side-scroll hogi */
+  .card1 {
+    width: 100%;
+    height: 420px;
+    padding: 8px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    overflow-x: auto;
+  }
+
+  .card1 > div {
+    position: relative;
+    flex: 0 0 273px;
+    width: 273px;
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 18px;
+  }
+
+  .image1 p,
+  .image2 p,
+  .image3 p,
+  .image4 p,
+  .image5 p,
+  .image6 p {
+    padding: 10px;
+    font-size: 25px;
+    line-height: 1.1;
+  }
+
+  /* Neeche ke chaar product boxes ek ke neeche ek */
+  .card2,
+  .card3 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .card-box1,
+  .card-box2,
+  .card-box3,
+  .card-box4 {
+    width: 100%;
+    height: auto;
+    padding: 8px;
+    border-radius: 14px;
+  }
+
+  .box-para {
+    padding: 8px;
+    font-size: 21px;
+  }
+
+  .table1 {
+    width: 100%;
+    table-layout: fixed;
+  }
+
+  table tr td {
+    width: 50%;
+    padding: 4px 5px 28px;
+    vertical-align: top;
+  }
+
+  /* Product images ko phone ki width ke hisaab se rakho */
+  [class^="box-image"] {
+    position: relative;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    background-position: center;
+    background-size: cover;
+    border-radius: 12px;
+  }
+
+  .up-para,
+  .down-para {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding-top: 4px;
+    font-size: 13px;
+  }
+
+  /* Sign-in section */
+  .signin {
+    width: calc(100% - 20px);
+    height: auto;
+    min-height: 150px;
+    margin: 30px 10px;
+    padding: 15px 8px;
+  }
+
+  .signin h2 {
+    font-size: 20px;
+  }
+
+  button {
+    width: min(234px, 90%);
+  }
+
+  .back {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  /* Footer columns phone par do column mein */
+  .footer-sec {
+    width: 100%;
+    height: auto;
+    padding: 20px 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  footer ul {
+    padding: 10px 60px;
+  }
+
+  footer li {
+    font-size: 13px;
+    overflow-wrap: anywhere;
+  }
+
+  .footer-list {
+    font-size: 15px;
+  }
+
+  .footer-logo {
+    display: none;
+  }
+
+  .footer-tag {
+    width: 100%;
+    min-height: 50px;
+    height: auto;
+    padding: 10px;
+    text-align: center;
+    font-size: 12px;
+  }
+}
+
+/* Moto G4 aur chhoti screens */
+@media (min-width: 601px) and (max-width:1024px) {
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  /* Upar ka header */
+  .navbar {
+    height: auto;
+    padding: 5px 8px;
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    grid-template-areas:
+      "logo signin cart"
+      "search search search"
+      "address address address";
+    gap: 6px;
+  }
+
+  .navbar > a:first-child {
+    grid-area: logo;
+  }
+
+  .logo {
+    width: 105px;
+    height: 43px;
+  }
+
+  /* Mobile par language aur Returns ko chhupao */
+  .anchor-lang,
+  .anchor-return {
+    display: none;
+  }
+
+  /* Deliver to India wali row */
+  .anchor-address {
+    grid-area: address;
+    display: block;
+    color: white;
+  }
+
+  .nav-address {
+    width: 100%;
+    height: 38px;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    text-align: left;
+  }
+
+  .deliver {
+    font-size: 13px;
+  }
+
+  .add-icon {
+    font-size: 15px;
+  }
+
+  .india {
+    font-size: 14px;
+  }
+
+  /* Sign in aur cart */
+  .navbar > a:nth-of-type(4) {
+    grid-area: signin;
+  }
+
+  .navbar > a:nth-of-type(6) {
+    grid-area: cart;
+  }
+
+  .nav-cart {
+    width: auto;
+    height: 43px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-signin {
+    display: none;
+  }
+
+  .nav-cart {
+    font-size: 22px;
+  }
+
+  .cart {
+    padding-top: 1px;
+    font-size: 12px;
+  }
+
+  /* Search ko poori width do */
+  .nav-search {
+    grid-area: search;
+    display: flex;
+    width: 100%;
+  }
+
+  .nav-select {
+    height: 42px;
+    flex-shrink: 0;
+  }
+
+  input {
+    width: 100%;
+    min-width: 0;
+    height: 42px;
+    flex: 1;
+    font-size: 15px;
+  }
+
+  .search-icon {
+    height: 42px;
+    flex-shrink: 0;
+  }
+
+  /* Neeche ke menu links ek line mein side-scroll honge */
+  .nav-sec {
+    height: 42px;
+    padding: 8px;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .menu-icon {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: max-content;
+  }
+
+  .menu-heading {
+    display: flex;
+    gap: 14px;
+  }
+
+  .menu-heading p {
+    padding-left: 0;
+    font-size: 14px;
+  }
+
+  /* Upar wale bade image cards: sirf ye row side-scroll hogi */
+  .card1 {
+    width: 100%;
+    height: 420px;
+    padding: 8px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    overflow-x: auto;
+  }
+
+  .card1 > div {
+    position: relative;
+    flex: 0 0 273px;
+    width: 273px;
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 18px;
+  }
+
+  .image1 p,
+  .image2 p,
+  .image3 p,
+  .image4 p,
+  .image5 p,
+  .image6 p {
+    padding: 10px;
+    font-size: 25px;
+    line-height: 1.1;
+  }
+
+  /* Neeche ke chaar product boxes ek ke neeche ek */
+  .card2,
+  .card3 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .card-box1,
+  .card-box2,
+  .card-box3,
+  .card-box4 {
+    width: 100%;
+    height: auto;
+    padding: 8px;
+    border-radius: 14px;
+  }
+
+  .box-para {
+    padding: 8px;
+    font-size: 21px;
+  }
+
+  .table1 {
+    width: 100%;
+    table-layout: fixed;
+  }
+
+  table tr td {
+    width: 50%;
+    padding: 4px 5px 28px;
+    vertical-align: top;
+  }
+
+  /* Product images ko phone ki width ke hisaab se rakho */
+  [class^="box-image"] {
+    position: relative;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    background-position: center;
+    background-size: cover;
+    border-radius: 12px;
+  }
+
+  .up-para,
+  .down-para {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding-top: 4px;
+    font-size: 13px;
+  }
+
+  /* Sign-in section */
+  .signin {
+    width: calc(100% - 20px);
+    height: auto;
+    min-height: 150px;
+    margin: 30px 10px;
+    padding: 15px 8px;
+  }
+
+  .signin h2 {
+    font-size: 20px;
+  }
+
+  button {
+    width: min(234px, 90%);
+  }
+
+  .back {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  /* Footer columns phone par do column mein */
+  .footer-sec {
+    width: 100%;
+    height: auto;
+    padding: 20px 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  footer ul {
+    padding: 10px 60px;
+  }
+
+  footer li {
+    font-size: 13px;
+    overflow-wrap: anywhere;
+  }
+
+  .footer-list {
+    font-size: 15px;
+  }
+
+  .footer-logo {
+    display: none;
+  }
+
+  .footer-tag {
+    width: 100%;
+    min-height: 50px;
+    height: auto;
+    padding: 10px;
+    text-align: center;
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,717 @@
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+.navbar {
+    height: 60px;
+    background-color: rgb(22, 29, 40);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.logo {
+    background-image: url(images/image\ copy\ 2.png);
+    width: 113px;
+    height: 50px;
+    background-size: cover;
+}
+
+.border {
+    border: 1px solid rgb(22, 29, 40);
+}
+
+.border:hover {
+    border: 1px solid white;
+}
+
+
+.deliver {
+    font-size: 0.85rem;
+    color: #ccc;
+}
+
+.add-icon {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.india {
+    font-size: 1rem;
+    color: white;
+}
+
+.anchor-address {
+    text-decoration: none;
+}
+
+.nav-address {
+    width: 80px;
+    height: 50px;
+    text-align: center;
+    padding: 5px;
+}
+
+.nav-search {
+    display: flex;
+}
+
+.nav-select {
+    width: 45px;
+    height: 38px;
+    border: none;
+    border-right: 1px solid rgb(195, 193, 193);
+    background-color: #e6e6e6;
+    padding: 5px;
+    color: #706f6f;
+    border-radius: 5px 0px 0px 5px;
+}
+
+input {
+    width: 746.5px;
+    height: 38px;
+    padding: 7px;
+    font-size: 15.5px;
+    border: none;
+}
+
+.search-icon {
+    width: 45px;
+    height: 38px;
+    border-radius: 0px 5px 5px 0px;
+    background-color: #F3A846;
+    color: black;
+    font-size: 1.3rem;
+    padding: 8px;
+}
+
+.nav-lang {
+    background-image: url(images/india_flag.svg);
+    width: 60px;
+    height: 50px;
+    display: flex;
+    padding: 14px;
+    border: 1px solid rgb(22, 29, 40);
+}
+
+.nav-lang:hover {
+    border: 1px solid white;
+}
+
+.anchor-lang {
+    text-decoration: none;
+    color: white;
+}
+
+.select-lang {
+    border: none;
+    background-color: rgb(22, 29, 40);
+    color: white;
+}
+
+.nav-signin  {
+    width: 130px;
+    height: 50px;
+    text-align: center;
+    padding: 5px;
+}
+
+.anchor-signin {
+    text-decoration: none;
+}
+
+.sign {
+    font-size: 0.85rem;
+    color: white;
+}
+
+.nav-cart {
+    width: 80px;
+    height: 50px;
+    text-align: center;
+    padding: 5px;
+    color: white;
+    display: flex;
+}
+
+.nav-return {
+    width: 80px;
+    height: 50px;
+    text-align: center;
+    padding: 5px;
+}
+
+.anchor-return {
+    text-decoration: none;
+    color: white;
+}
+
+.return {
+    font-size: 0.85rem;
+}
+
+.cart {
+    padding-top: 10px;
+    font-size: 0.90rem;
+}
+
+.nav-cart, .cart-icon {
+    padding-top: 10px;
+    font-size: 1.8rem;
+}
+
+.nav-sec {
+    height: 39px;
+    background-color: #222F3E;
+    color: white;
+    padding: 7px;
+    font-size: 16px;
+}
+
+.menu-all {
+    display: inline-block;
+}
+
+.menu-heading {
+    display: inline;
+    text-align: center;
+}
+
+.menu-heading p {
+    padding-left: 20px;
+    font-size: 15px;
+}
+
+.card1 {
+    width: 100%;
+    height: 445.06px;
+    display: flex;
+    padding: 8px;
+    justify-content: space-evenly;
+    overflow-x: auto;
+    gap: 8px;
+    scrollbar-width: none;
+}
+
+.card1 > div {
+    flex: 0 0 273px;
+}
+
+.image1 {
+    background-image: url(images/image\ 1.avif);
+    width: 273.16px;
+    height: 437.06px;
+    background-size: cover;
+    border-radius: 20px;
+
+}
+
+.image1 p {
+    padding: 10px;
+    font-weight: bolder;
+    font-size: 30px;
+    font-family: "Boldonse", system-ui;
+    font-weight: 800;
+}
+
+.image2 {
+    background-image: url(images/image\ 2.avif);
+    width: 273.16px;
+    height: 437.06px;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.image2 p {
+    padding: 10px;
+    font-weight: bolder;
+    font-size: 30px;
+    font-family: "Boldonse", system-ui;
+    font-weight: 800;
+}
+
+.image3 {
+    background-image: url(images/image\ 3.avif);
+    width: 273.16px;
+    height: 437.06px;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.image3 p {
+    padding: 10px;
+    font-weight: bolder;
+    font-size: 30px;
+    font-family: "Boldonse", system-ui;
+    font-weight: 800;
+}
+
+.image4 {
+    background-image: url(images/image\ 4.avif);
+    width: 273.16px;
+    height: 437.06px;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.image4 p {
+    padding: 10px;
+    font-weight: bolder;
+    font-size: 30px;
+    font-family: "Boldonse", system-ui;
+    font-weight: 800;
+}
+
+.image5 {
+    background-image: url(images/image\ 5.avif);
+    width: 273.16px;
+    height: 437.06px;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.image5 p {
+    padding: 10px;
+    font-weight: bolder;
+    font-size: 30px;
+    font-family: "Boldonse", system-ui;
+    font-weight: 800;
+}
+
+.image6 {
+    background-image: url(images/image\ 6.avif);
+    width: 273.16px;
+    height: 437.06px;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.image6 p {
+    padding: 10px;
+    font-weight: bolder;
+    font-size: 30px;
+    font-family: "Boldonse", system-ui;
+    font-weight: 800;
+}
+
+.card2 {
+    width: 100%;
+    height: 502.64px;
+    display: flex;
+    gap: 10px;
+    padding-top: 25px;
+    padding-left: 16px;
+}
+
+.card-box1 {
+    background-color: white;
+    width: 351.5px;
+    height: 502.64px;
+    border: 1px solid #d5d9d9;
+    border-radius: 20px;
+}
+
+.card-box2 {
+    background-color: white;
+    width: 351.5px;
+    height: 502.64px;
+    border: 1px solid #d5d9d9;
+    border-radius: 20px;
+}
+
+.card-box3 {
+    background-color: white;
+    width: 351.5px;
+    height: 502.64px;
+    border: 1px solid #d5d9d9;
+    border-radius: 20px;
+}
+
+.card-box4 {
+    background-color: white;
+    width: 351.5px;
+    height: 502.64px;
+    border: 1px solid #d5d9d9;
+    border-radius: 20px;
+}
+
+.box-para {
+    padding: 15px;
+    font-size: 24px;
+    color: #0f1111;
+    font-weight: bold;
+}
+
+.box-image1 {
+    background-image: url(images/boximage\ 1.jpg);
+    width: 160px;
+    height: 160px;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.box-image2 {
+    background-image: url(images/box\ image\ 2.jpg);
+    width: 160px;
+    height: 160px;
+    background-size: cover;
+        border-radius: 20px;
+}
+
+.box-image3 {
+    background-image: url(images/box\ image\ 3.jpg);
+    width: 160px;
+    height: 160px;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.box-image4 {
+    background-image: url(images/box\ image\ 4.jpg);
+    width: 160px;
+    height: 160px;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+table tr td {
+    padding-left: 5px;
+    padding-bottom: 50px;
+}
+
+.card3 {
+    width: 100%;
+    height: 502.64px;
+    display: flex;
+    gap: 10px;
+    padding-top: 25px;
+    padding-left: 16px;
+    margin-top: 20px;
+}
+
+.box-image5 {
+    background-image: url(images/box\ image\ 5.jpg);
+    width: 160px;
+    height: 160px;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.box-image6 {
+    background-image: url(images/box\ image6.jpg);
+    width: 160px;
+    height: 160px;
+    background-size: cover;
+        border-radius: 20px;
+}
+
+.box-image7 {
+    background-image: url(images/box\ image\ 7.jpg);
+    width: 160px;
+    height: 160px;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.box-image8 {
+    background-image: url(images/box\ image\ 8.jpg);
+    width: 160px;
+    height: 160px;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.box-image9 {
+    background-image: url(images/box\ image\ 9.jpg);
+    width: 160px;
+    height: 160px;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.box-image10 {
+    background-image: url(images/box\ image\ 10.jpg);
+    width: 160px;
+    height: 160px;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.box-image11 {
+    background-image: url(images/box\ image\ 11.jpg);
+    width: 160px;
+    height: 160px;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.box-image12 {
+    background-image: url(images/box\ image\ 12.jpg);
+    width: 160px;
+    height: 160px;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.box-image13 {
+    background-image: url(images/box\ image\ 13.jpg);
+    width: 160px;
+    height: 160px;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.box-image14 {
+    background-image: url(images/box\ image\ 14.jpg);
+    width: 160px;
+    height: 160px;
+    background-size: cover;
+        border-radius: 20px;
+}
+
+.box-image15 {
+    background-image: url(images/box\ image\ 15.jpg);
+    width: 160px;
+    height: 160px;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.box-image16 {
+    background-image: url(images/box\ image\ 16.jpg);
+    width: 160px;
+    height: 160px;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.up-para {
+   padding-top:165px;
+   font-size: 14px;
+}
+
+.down-para {
+   padding-top:165px;
+   font-size: 14px;
+}
+
+.box-image17 {
+    background-image: url(images/box\ image\ 17.jpg);
+    width: 160px;
+    height: 160px;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.box-image18 {
+    background-image: url(images/box\ image\ 18.jpg);
+    width: 160px;
+    height: 160px;
+    background-size: cover;
+        border-radius: 20px;
+}
+
+.box-image19 {
+    background-image: url(images/box\ image\ 19.jpg);
+    width: 160px;
+    height: 160px;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.box-image20 {
+    background-image: url(images/box\ image\ 20.jpg);
+    width: 160px;
+    height: 160px;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.box-image21 {
+    background-image: url(images/box\ image\ 21.jpg);
+    width: 160px;
+    height: 160px;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.box-image22 {
+    background-image: url(images/box\ image\ 22.jpg);
+    width: 160px;
+    height: 160px;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.box-image23 {
+    background-image: url(images/box\ image\ 23.jpg);
+    width: 160px;
+    height: 160px;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.box-image24 {
+    background-image: url(images/box\ image\ 24.jpg);
+    width: 160px;
+    height: 160px;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.box-image25 {
+    background-image: url(images/box\ image\ 25.jpg);
+    width: 160px;
+    height: 160px;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.box-image26 {
+    background-image: url(images/box\ image\ 26.jpg);
+    width: 160px;
+    height: 160px;
+    background-size: cover;
+        border-radius: 20px;
+}
+
+.box-image27 {
+    background-image: url(images/box\ image\ 27.jpg);
+    width: 160px;
+    height: 160px;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.box-image28 {
+    background-image: url(images/box\ image\ 28.jpg);
+    width: 160px;
+    height: 160px;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.box-image29 {
+    background-image: url(images/box\ image\ 29.jpg);
+    width: 160px;
+    height: 160px;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.box-image30 {
+    background-image: url(images/box\ image\ 30.jpg);
+    width: 160px;
+    height: 160px;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.box-image31 {
+    background-image: url(images/box\ image\ 31.jpg);
+    width: 160px;
+    height: 160px;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.box-image32 {
+    background-image: url(images/box\ image\ 32.jpg);
+    width: 160px;
+    height: 160px;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.signin {
+    width: 1470px;
+    height: 149px;
+    border: 1px solid #DDD;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    margin-top: 70px;
+    gap: 10px;
+
+}
+
+.customer {
+    font-size: 11px;
+}
+
+span a {
+    color: #2162a1;
+}
+
+button {
+    width: 234px;
+    height: 30px;
+    background-color: rgb(255, 206, 16);
+    border: none;
+    border-radius: 20px;
+}
+
+button a {
+   text-decoration: none;
+   color: black;
+}
+
+.back {
+    height: 50px;
+    background-color: #37475A;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    margin-top: 50px;
+}
+
+.footer-sec {
+    width: 100%;
+    height: 400px;
+    background-color: #222F3E;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    color: white;
+    
+}
+
+footer li {
+    list-style: none;
+    color: #ccc6c6;
+    padding-bottom: 10px;
+    
+}
+
+footer ul {
+    padding: 60px;
+    
+}
+
+.footer-list {
+    color: white;
+    padding-bottom: 15px;
+}
+
+.footer-tag {
+    height: 50px;
+    background-color: rgb(22, 29, 40);
+    color: #ccc6c6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+}
