@@ -145,16 +145,61 @@ button {
     font-size: 16px;
 }
 
+.button1, .button2, .button4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 287.5px;
+  height: 48px;
+  margin-top: 30px;
+  border: 1px solid blue;
+  border-radius: 10px;
+  background-color: #eee;
+  color: blue;
+  font-size: 18px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 287.5px;
+  height: 48px;
+  margin-top: 30px;
+  border: 1px solid blue;
+  border-radius: 10px;
+  background-color: #eee;
+  color: blue;
+  font-size: 18px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button1:hover {
+  background-color: black;
+  color: white;
+  border-color: black;
+}
+
 .button2:hover {
-    background-color: black;
-    border: none;
-
+  background-color: black;
+  color: white;
+  border-color: black;
 }
 
-.button-anchor:hover {
-    color: white;
+.button4:hover {
+  background-color: black;
+  color: white;
+  border-color: black;
 }
 
+.button3:hover {
+  background-color: #502ac0;
+  color: white;
+  border-color: black;
+}
 
 .para4 {
     color: #797980;
