@@ -654,18 +654,18 @@ span a {
     color: #2162a1;
 }
 
-button {
+.button1 {
     width: 234px;
     height: 30px;
     background-color: rgb(255, 206, 16);
     border: none;
     border-radius: 20px;
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    font-size: 15px;
 }
 
-button a {
-   text-decoration: none;
-   color: black;
-}
 
 .back {
     height: 50px;
