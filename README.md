@@ -97,6 +97,10 @@ h1 {
 }
 ```
 
+**Output :**
+
+<img src="/Users/sumit/MERN Stack Developer/Frontend/assets/output_images/image1.png" width="600" height="250">
+
 ### Key Components
 
 1. **Selector:** Ye us HTML element ko select karta hai jise hum style karna chahte hain.
@@ -108,15 +112,15 @@ h1 {
 ### Example Breakdown
 
 ```css
-p {
+h1 {
     color: red;
-    font-size: 18px;
+    font-size: 32px;
 }
 ```
 
-- `p` — Selector
+- `h1` — Selector
 - `color` — Property
-- `red` — Value
+- `blue` — Value
 - `color: red;` — Declaration
 - `{ }` — Declaration Block
 
@@ -137,6 +141,12 @@ Inline CSS mein CSS ko directly HTML element ke andar `style` attribute ki help 
     Hello World
 </p>
 ```
+
+**Output :**
+
+<img src="/Users/sumit/MERN Stack Developer/Frontend/assets/output_images/image2.png" width="600" height="250">
+
+<br>
 
 **Use:** Jab kisi specific HTML element par styling apply karni ho.
 
@@ -166,6 +176,12 @@ Internal CSS mein CSS ko HTML document ke andar `<style>` element mein likha jat
 </body>
 </html>
 ```
+
+**Output :**
+
+<img src="/Users/sumit/MERN Stack Developer/Frontend/assets/output_images/image2.png" width="600" height="250">
+
+<br>
 
 **Use:** Jab sirf ek HTML page ko style karna ho.
 
@@ -199,6 +215,12 @@ h1 {
     font-size: 32px;
 }
 ```
+
+**Output :**
+
+<img src="/Users/sumit/MERN Stack Developer/Frontend/assets/output_images/image3.png" width="600" height="250">
+
+<br>
 
 **Use:** Multiple pages wali websites ke liye ye best method hai, kyunki ek hi CSS file se multiple HTML pages ko style kiya ja sakta hai.
 
