@@ -1,9 +1,4 @@
-
 <h1 align="center">Complete CSS Notes</h1>
-
-<p align="center">CSS Handbook — Complete Reference & Practical Guide</p>
-
----
 
 ## Table of Contents
 
@@ -53,11 +48,13 @@
 
 ## What is CSS?
 
-CSS stands for **Cascading Style Sheets**.
+CSS ka full form **Cascading Style Sheets** hai.
 
-CSS is a stylesheet language used to control the appearance and layout of HTML documents. It helps us design beautiful and responsive websites.
+CSS ek stylesheet language hai jiska use HTML documents ki appearance aur layout ko control karne ke liye hota hai. Iski help se hum website ko attractive, well-designed aur responsive bana sakte hain.
 
-CSS is used to control:
+CSS ki help se hum webpage ke elements ka color, size, spacing, position aur overall design control karte hain.
+
+### CSS is used to control:
 
 - Colors and backgrounds
 - Fonts and text styling
@@ -73,15 +70,15 @@ CSS is used to control:
 
 | Technology | Purpose |
 |---|---|
-| HTML | Structure of a webpage |
-| CSS | Styling and layout of a webpage |
-| JavaScript | Behaviour and interactivity of a webpage |
+| HTML | Webpage ka structure banata hai |
+| CSS | Webpage ki styling aur layout control karta hai |
+| JavaScript | Webpage mein behaviour aur interactivity add karta hai |
 
 ---
 
 # 2. Basic CSS Syntax
 
-CSS rules follow a specific syntax.
+CSS rules ek fixed syntax ko follow karte hain. Is syntax ki help se hum HTML elements par styling apply karte hain.
 
 ### Syntax
 
@@ -102,11 +99,11 @@ h1 {
 
 ### Key Components
 
-1. **Selector:** Selects the HTML element that we want to style.
-2. **Property:** Defines which style we want to change.
-3. **Value:** Defines the setting assigned to a property.
-4. **Declaration:** A property and value pair.
-5. **Declaration Block:** All declarations written inside curly brackets `{ }`.
+1. **Selector:** Ye us HTML element ko select karta hai jise hum style karna chahte hain.
+2. **Property:** Ye define karti hai ki humein kis style ko change karna hai.
+3. **Value:** Ye batati hai ki property ko kaunsi setting deni hai.
+4. **Declaration:** Property aur value ke combination ko declaration kehte hain.
+5. **Declaration Block:** Curly brackets `{ }` ke andar likhi gayi sabhi declarations ko declaration block kehte hain.
 
 ### Example Breakdown
 
@@ -121,17 +118,17 @@ p {
 - `color` — Property
 - `red` — Value
 - `color: red;` — Declaration
-- `{ }` — Declaration block
+- `{ }` — Declaration Block
 
 ---
 
 # 3. Ways to Add CSS
 
-There are three main ways to add CSS to an HTML document.
+HTML document mein CSS add karne ke three main methods hote hain.
 
 ## 1. Inline CSS
 
-CSS is written directly inside an HTML element using the `style` attribute.
+Inline CSS mein CSS ko directly HTML element ke andar `style` attribute ki help se likha jata hai.
 
 ### Example
 
@@ -141,11 +138,11 @@ CSS is written directly inside an HTML element using the `style` attribute.
 </p>
 ```
 
-**Use:** For applying a style to a specific HTML element.
+**Use:** Jab kisi specific HTML element par styling apply karni ho.
 
 ## 2. Internal CSS
 
-CSS is written inside the `<style>` element in the HTML document.
+Internal CSS mein CSS ko HTML document ke andar `<style>` element mein likha jata hai.
 
 ### Example
 
@@ -170,11 +167,11 @@ CSS is written inside the `<style>` element in the HTML document.
 </html>
 ```
 
-**Use:** When styling a single HTML page.
+**Use:** Jab sirf ek HTML page ko style karna ho.
 
 ## 3. External CSS (Recommended)
 
-CSS is written in a separate file, usually named `style.css`, and connected to the HTML document.
+External CSS mein CSS ko ek separate file mein likha jata hai. Is file ka naam usually `style.css` rakha jata hai aur ise HTML document ke saath connect kiya jata hai.
 
 ### HTML File
 
@@ -203,17 +200,17 @@ h1 {
 }
 ```
 
-**Use:** Best for websites with multiple pages because one CSS file can style many HTML pages.
+**Use:** Multiple pages wali websites ke liye ye best method hai, kyunki ek hi CSS file se multiple HTML pages ko style kiya ja sakta hai.
 
 ---
 
 # 4. CSS Selectors
 
-CSS selectors are used to select HTML elements that we want to style.
+CSS selectors ka use HTML elements ko select karne ke liye hota hai, jin par hum styling apply karna chahte hain.
 
 ## 1. Universal Selector (`*`)
 
-Selects all HTML elements.
+Ye webpage ke sabhi HTML elements ko select karta hai.
 
 ```css
 * {
@@ -225,7 +222,7 @@ Selects all HTML elements.
 
 ## 2. Element Selector
 
-Selects all elements of a particular HTML tag.
+Ye kisi particular HTML tag ke sabhi elements ko select karta hai.
 
 ```css
 p {
@@ -236,7 +233,7 @@ p {
 
 ## 3. Class Selector (`.`)
 
-Selects all HTML elements having a specific class name.
+Ye un sabhi HTML elements ko select karta hai jinke paas same class name hota hai.
 
 ```css
 .card {
@@ -255,7 +252,7 @@ Selects all HTML elements having a specific class name.
 
 ## 4. ID Selector (`#`)
 
-Selects the element having a specific ID.
+Ye us HTML element ko select karta hai jiske paas specified ID hoti hai.
 
 ```css
 #header {
@@ -274,7 +271,7 @@ Selects the element having a specific ID.
 
 ## 5. Grouping Selector (`,`)
 
-Applies the same CSS properties to multiple selectors.
+Iska use multiple selectors par same CSS properties apply karne ke liye hota hai.
 
 ```css
 h1, h2, p {
@@ -285,7 +282,7 @@ h1, h2, p {
 
 ## 6. Descendant Selector (Space)
 
-Selects matching elements located anywhere inside another element.
+Ye kisi element ke andar kahin bhi present matching elements ko select karta hai.
 
 ```css
 .card p {
@@ -293,11 +290,11 @@ Selects matching elements located anywhere inside another element.
 }
 ```
 
-This selects all `<p>` elements inside `.card`, including nested descendants.
+Ye `.card` ke andar present sabhi `<p>` elements ko select karega, chahe woh directly andar hon ya kisi doosre element ke andar nested hon.
 
 ## 7. Child Selector (`>`)
 
-Selects only the direct children of an element.
+Ye sirf kisi element ke direct children ko select karta hai.
 
 ```css
 nav > a {
@@ -308,7 +305,7 @@ nav > a {
 
 ## 8. Adjacent Sibling Selector (`+`)
 
-Selects the first matching element immediately after another element.
+Ye kisi element ke immediately baad aane wale pehle matching sibling element ko select karta hai.
 
 ```css
 h2 + p {
@@ -318,7 +315,7 @@ h2 + p {
 
 ## 9. General Sibling Selector (`~`)
 
-Selects matching sibling elements that appear after another element.
+Ye kisi element ke baad aane wale matching sibling elements ko select karta hai.
 
 ```css
 h2 ~ p {
@@ -328,7 +325,7 @@ h2 ~ p {
 
 ## 10. Attribute Selector (`[]`)
 
-Selects elements based on their attributes or attribute values.
+Ye elements ko unke attributes ya attribute values ke basis par select karta hai.
 
 ```css
 input[type="email"] {
@@ -346,10 +343,10 @@ a[target="_blank"] {
 
 | Selector | Meaning |
 |---|---|
-| `*` | All elements |
-| `p` | All paragraph elements |
-| `.box` | Elements with class box |
-| `#header` | Element with ID header |
+| `*` | Sabhi elements |
+| `p` | Sabhi paragraph elements |
+| `.box` | `box` class wale elements |
+| `#header` | `header` ID wala element |
 | `h1, p` | Grouping selector |
 | `.card p` | Descendant selector |
 | `.card > p` | Direct child selector |
@@ -361,7 +358,7 @@ a[target="_blank"] {
 
 # 5. Pseudo-Classes
 
-Pseudo-classes select HTML elements based on their state, position or condition.
+Pseudo-classes ka use HTML elements ko unki state, position ya condition ke basis par select karne ke liye hota hai.
 
 ### Syntax
 
@@ -379,32 +376,32 @@ a:hover {
 }
 ```
 
-When the mouse pointer moves over the link, its color changes to red.
+Jab mouse pointer link ke upar jayega, tab us link ka color red ho jayega.
 
 ## Common Pseudo-Classes
 
 | Pseudo-Class | Use |
 |---|---|
-| `:hover` | When mouse pointer is over an element |
-| `:focus` | When an element receives focus |
-| `:focus-visible` | Shows focus indicator when appropriate |
-| `:active` | When an element is being activated |
-| `:visited` | Visited links |
-| `:link` | Unvisited links |
-| `:checked` | Checked checkbox or radio button |
+| `:hover` | Jab mouse pointer element ke upar ho |
+| `:focus` | Jab element focus receive kare |
+| `:focus-visible` | Jab appropriate condition mein focus indicator show ho |
+| `:active` | Jab element activate ho raha ho |
+| `:visited` | Pehle visit kiye gaye links |
+| `:link` | Abhi tak visit nahi kiye gaye links |
+| `:checked` | Checked checkbox ya radio button |
 | `:disabled` | Disabled form control |
 | `:enabled` | Enabled form control |
 | `:required` | Required input field |
-| `:valid` | Input passes validation |
-| `:invalid` | Input fails validation |
-| `:first-child` | First child of its parent |
-| `:last-child` | Last child of its parent |
-| `:nth-child(n)` | Child at a particular position |
-| `:not()` | Elements that do not match a selector |
-| `:is()` | Matches any selector in a list |
-| `:where()` | Similar to `:is()` with zero specificity |
+| `:valid` | Validation pass karne wala input |
+| `:invalid` | Validation fail karne wala input |
+| `:first-child` | Parent ka first child |
+| `:last-child` | Parent ka last child |
+| `:nth-child(n)` | Particular position par present child |
+| `:not()` | Jo given selector ko match nahi karta |
+| `:is()` | List mein diye gaye kisi bhi selector ko match karta hai |
+| `:where()` | `:is()` jaisa, lekin zero specificity ke saath |
 | `:root` | Root HTML element |
-| `:empty` | Element with no children |
+| `:empty` | Aisa element jiske andar koi child nahi hai |
 
 ### Example 1 — Hover
 
@@ -456,7 +453,7 @@ button:disabled {
 
 # 6. Pseudo-Elements
 
-Pseudo-elements style a specific part of an HTML element or create decorative content.
+Pseudo-elements ka use HTML element ke kisi specific part ko style karne ya decorative content create karne ke liye hota hai.
 
 ### Syntax
 
@@ -479,14 +476,14 @@ p::first-letter {
 
 | Pseudo-Element | Use |
 |---|---|
-| `::before` | Inserts generated content before an element's content |
-| `::after` | Inserts generated content after an element's content |
-| `::first-letter` | Styles the first letter |
-| `::first-line` | Styles the first line |
-| `::selection` | Styles selected text |
-| `::placeholder` | Styles placeholder text |
-| `::marker` | Styles list markers |
-| `::file-selector-button` | Styles file input button |
+| `::before` | Element ke content se pehle generated content add karta hai |
+| `::after` | Element ke content ke baad generated content add karta hai |
+| `::first-letter` | First letter ko style karta hai |
+| `::first-line` | First line ko style karta hai |
+| `::selection` | Selected text ko style karta hai |
+| `::placeholder` | Placeholder text ko style karta hai |
+| `::marker` | List markers ko style karta hai |
+| `::file-selector-button` | File input button ko style karta hai |
 
 ### Example 1 — Before
 
@@ -523,42 +520,42 @@ input::placeholder {
 }
 ```
 
-**Note:** `::before` and `::after` usually need the `content` property to display generated content.
+**Note:** `::before` aur `::after` se generated content display karne ke liye usually `content` property ki zarurat hoti hai.
 
 ---
 
 # 7. Cascade, Specificity and Inheritance
 
-These three concepts determine how CSS styles are applied to HTML elements.
+Ye three concepts decide karte hain ki HTML elements par CSS styles kis tarah apply hongi.
 
 ## 1. Cascade
 
-Cascade is the process through which the browser decides which CSS declaration wins when multiple rules apply to the same element.
+Cascade woh process hai jiske through browser decide karta hai ki jab ek hi element par multiple CSS rules apply ho rahe hon, toh unmein se kaunsi declaration apply hogi.
 
 ## 2. Specificity
 
-Specificity is the weight of a selector used to resolve conflicting CSS rules.
+Specificity kisi selector ki priority ya weight hoti hai. Iska use conflicting CSS rules mein winner decide karne ke liye hota hai.
 
 ### General Specificity Order
 
 1. Inline styles
 2. ID selectors
-3. Class, attribute and pseudo-class selectors
-4. Element and pseudo-element selectors
+3. Class, attribute aur pseudo-class selectors
+4. Element aur pseudo-element selectors
 
 ## 3. Inheritance
 
-Inheritance means some CSS properties automatically pass from a parent element to its children.
+Inheritance ka matlab hai ki kuch CSS properties parent element se automatically uske child elements tak pass ho jati hain.
 
-For example, `color` and `font-family` are commonly inherited.
+Example ke liye, `color` aur `font-family` commonly inherited properties hain.
 
 ## 4. Source Order
 
-If two declarations have the same priority and specificity, the later declaration generally wins.
+Agar do declarations ki priority aur specificity same hai, toh generally baad mein likhi gayi declaration apply hoti hai.
 
 ## 5. !important
 
-The `!important` rule gives a declaration higher priority within the cascade.
+`!important` rule kisi declaration ko cascade mein higher priority deta hai.
 
 ```css
 p {
@@ -566,7 +563,7 @@ p {
 }
 ```
 
-Avoid using `!important` unnecessarily.
+Bina zarurat `!important` ka use avoid karna chahiye.
 
 ### Specificity Example
 
@@ -584,15 +581,17 @@ p {
 }
 ```
 
-If the same paragraph matches all three selectors, the ID selector normally wins among these declarations.
+Agar same paragraph teeno selectors ko match karta hai, toh in declarations mein normally ID selector ki priority sabse zyada hogi.
 
 ---
 
 # 8. CSS Colors
 
-CSS provides different ways to define colors for text, backgrounds, borders and other elements.
+CSS mein text, background, borders aur doosre elements ke colors define karne ke liye different formats available hain.
 
 ## 1. Named Colors
+
+Color ka naam directly likhkar use kar sakte hain.
 
 ```css
 h1 {
@@ -612,7 +611,7 @@ Examples:
 
 ## 2. HEX Colors
 
-HEX is a hexadecimal color format.
+HEX ek hexadecimal color format hai.
 
 ```css
 p {
@@ -622,7 +621,7 @@ p {
 
 ## 3. RGB Colors
 
-RGB stands for Red, Green and Blue.
+RGB ka full form Red, Green and Blue hai.
 
 ```css
 div {
@@ -632,7 +631,7 @@ div {
 
 ## 4. RGBA Colors
 
-RGBA adds an alpha channel for transparency.
+RGBA mein RGB ke saath alpha channel bhi hota hai, jo transparency control karta hai.
 
 ```css
 section {
@@ -642,7 +641,7 @@ section {
 
 ## 5. HSL Colors
 
-HSL stands for Hue, Saturation and Lightness.
+HSL ka full form Hue, Saturation and Lightness hai.
 
 ```css
 h2 {
@@ -652,7 +651,7 @@ h2 {
 
 ## 6. Transparent
 
-Makes the color completely transparent.
+Isse color completely transparent ho jata hai.
 
 ```css
 .box {
@@ -675,11 +674,11 @@ Makes the color completely transparent.
 
 | Property | Use |
 |---|---|
-| `color` | Sets foreground or text color |
-| `opacity` | Sets transparency of the entire element |
-| `accent-color` | Sets accent color of supported controls |
-| `caret-color` | Sets text cursor color in inputs |
-| `color-scheme` | Indicates support for light and dark color schemes |
+| `color` | Text ya foreground color set karta hai |
+| `opacity` | Pore element ki transparency set karta hai |
+| `accent-color` | Supported controls ka accent color set karta hai |
+| `caret-color` | Input mein text cursor ka color set karta hai |
+| `color-scheme` | Light aur dark color schemes ke support ko indicate karta hai |
 
 ### Example
 
@@ -694,7 +693,7 @@ Makes the color completely transparent.
 
 # 9. Background Properties
 
-Background properties control an element's background color, image, position, size and display.
+Background properties ka use kisi element ka background color, image, position, size aur display control karne ke liye hota hai.
 
 ### Example
 
@@ -713,20 +712,20 @@ body {
 
 | Property | Use |
 |---|---|
-| `background` | Shorthand for background settings |
-| `background-color` | Sets background color |
-| `background-image` | Adds an image or gradient |
-| `background-repeat` | Controls image repetition |
-| `background-position` | Sets background image position |
-| `background-size` | Sets background image size |
-| `background-attachment` | Controls scrolling attachment |
-| `background-origin` | Sets the box used to position the background |
-| `background-clip` | Defines the area painted by the background |
-| `background-blend-mode` | Blends background layers |
+| `background` | Background settings ke liye shorthand property |
+| `background-color` | Background color set karta hai |
+| `background-image` | Image ya gradient add karta hai |
+| `background-repeat` | Image repeat hogi ya nahi, control karta hai |
+| `background-position` | Background image ki position set karta hai |
+| `background-size` | Background image ka size set karta hai |
+| `background-attachment` | Scrolling ke saath background ka behaviour control karta hai |
+| `background-origin` | Background position karne ke liye box set karta hai |
+| `background-clip` | Background kis area tak paint hoga, define karta hai |
+| `background-blend-mode` | Background layers ko blend karta hai |
 
 ## Background Gradient
 
-A gradient creates a smooth transition between two or more colors.
+Gradient ek smooth color transition create karta hai, jisme two ya more colors use kiye ja sakte hain.
 
 ### Linear Gradient
 
@@ -762,9 +761,9 @@ background-size: contain;
 background-size: auto;
 ```
 
-- `cover` — Covers the complete background area.
-- `contain` — Shows the complete image inside the area.
-- `auto` — Uses the original image size where applicable.
+- `cover` — Background area ko completely cover karta hai.
+- `contain` — Image ko poora background area ke andar show karta hai.
+- `auto` — Jahan applicable ho, image ka original size use karta hai.
 
 ### Background Repeat
 
@@ -787,11 +786,11 @@ background-position: bottom left;
 
 # 10. CSS Units and Values
 
-CSS units define the size, spacing and dimensions of HTML elements.
+CSS units ka use HTML elements ka size, spacing aur dimensions define karne ke liye hota hai.
 
-## 1. Absolute Unit
+## 1. Absolute Units
 
-Absolute units have fixed reference sizes.
+Absolute units ki reference size fixed hoti hai.
 
 | Unit | Meaning |
 |---|---|
@@ -802,25 +801,25 @@ Absolute units have fixed reference sizes.
 | `pt` | Point |
 | `pc` | Pica |
 
-For normal web layouts, `px` is commonly used.
+Normal web layouts mein `px` ka commonly use hota hai.
 
 ## 2. Relative Units
 
-Relative units depend on another size or the viewport.
+Relative units kisi doosre size ya viewport par depend karti hain.
 
 | Unit | Meaning |
 |---|---|
-| `%` | Percentage relative to a relevant containing size |
-| `em` | Relative to the element's font size |
-| `rem` | Relative to the root element's font size |
-| `vw` | 1% of viewport width |
-| `vh` | 1% of viewport height |
-| `dvw` | 1% of dynamic viewport width |
-| `dvh` | 1% of dynamic viewport height |
-| `vmin` | 1% of smaller viewport dimension |
-| `vmax` | 1% of larger viewport dimension |
-| `ch` | Based on the width of the 0 character |
-| `fr` | Fraction of available space in CSS Grid |
+| `%` | Kisi relevant containing size ka percentage |
+| `em` | Element ke font size ke relative |
+| `rem` | Root element ke font size ke relative |
+| `vw` | Viewport width ka 1% |
+| `vh` | Viewport height ka 1% |
+| `dvw` | Dynamic viewport width ka 1% |
+| `dvh` | Dynamic viewport height ka 1% |
+| `vmin` | Viewport ki chhoti dimension ka 1% |
+| `vmax` | Viewport ki badi dimension ka 1% |
+| `ch` | `0` character ki width ke basis par |
+| `fr` | CSS Grid mein available space ka fraction |
 
 ### Example 1 — REM
 
@@ -858,11 +857,11 @@ h1 {
 
 # 11. CSS Functions
 
-CSS functions are used to calculate values, define sizes, create gradients and reuse values.
+CSS functions ka use values calculate karne, sizes define karne, gradients create karne aur values reuse karne ke liye hota hai.
 
 ## 1. calc()
 
-Performs mathematical calculations.
+Mathematical calculations perform karta hai.
 
 ```css
 .container {
@@ -872,7 +871,7 @@ Performs mathematical calculations.
 
 ## 2. min()
 
-Selects the smaller value.
+Di gayi values mein se chhoti value select karta hai.
 
 ```css
 .container {
@@ -882,7 +881,7 @@ Selects the smaller value.
 
 ## 3. max()
 
-Selects the larger value.
+Di gayi values mein se badi value select karta hai.
 
 ```css
 .heading {
@@ -892,7 +891,7 @@ Selects the larger value.
 
 ## 4. clamp()
 
-Keeps a value between a minimum and maximum.
+Kisi value ko minimum aur maximum limit ke beech rakhta hai.
 
 ```css
 h1 {
@@ -902,7 +901,7 @@ h1 {
 
 ## 5. var()
 
-Uses a CSS custom property.
+CSS custom property ki value use karta hai.
 
 ```css
 .box {
@@ -912,7 +911,7 @@ Uses a CSS custom property.
 
 ## 6. minmax()
 
-Defines minimum and maximum sizes, commonly used in CSS Grid.
+Minimum aur maximum sizes define karta hai. Iska use commonly CSS Grid mein hota hai.
 
 ```css
 .grid {
@@ -922,7 +921,7 @@ Defines minimum and maximum sizes, commonly used in CSS Grid.
 
 ## 7. repeat()
 
-Repeats Grid track definitions.
+Grid track definitions ko repeat karta hai.
 
 ```css
 .grid {
@@ -932,7 +931,7 @@ Repeats Grid track definitions.
 
 ## 8. url()
 
-References an external resource.
+Kisi external resource ko reference karta hai.
 
 ```css
 .box {
@@ -960,32 +959,31 @@ background: conic-gradient(red, yellow, green);
 ```
 
 ---
-
 # 12. Width, Height and Sizing
 
-Sizing properties control the dimensions of HTML elements.
+Sizing properties ka use HTML elements ki width, height aur overall dimensions control karne ke liye hota hai.
 
 ## Common Sizing Properties
 
 | Property | Use |
 |---|---|
-| `width` | Sets width |
-| `min-width` | Sets minimum width |
-| `max-width` | Sets maximum width |
-| `height` | Sets height |
-| `min-height` | Sets minimum height |
-| `max-height` | Sets maximum height |
-| `inline-size` | Sets logical width |
-| `block-size` | Sets logical height |
-| `min-inline-size` | Sets minimum logical width |
-| `max-inline-size` | Sets maximum logical width |
-| `min-block-size` | Sets minimum logical height |
-| `max-block-size` | Sets maximum logical height |
-| `aspect-ratio` | Sets preferred width-to-height ratio |
-| `box-sizing` | Controls how dimensions are calculated |
-| `object-fit` | Controls how image/video fits its box |
-| `object-position` | Controls image/video position inside its box |
-| `overflow` | Controls content outside an element's box |
+| `width` | Element ki width set karta hai |
+| `min-width` | Minimum width set karta hai |
+| `max-width` | Maximum width set karta hai |
+| `height` | Element ki height set karta hai |
+| `min-height` | Minimum height set karta hai |
+| `max-height` | Maximum height set karta hai |
+| `inline-size` | Logical width set karta hai |
+| `block-size` | Logical height set karta hai |
+| `min-inline-size` | Minimum logical width set karta hai |
+| `max-inline-size` | Maximum logical width set karta hai |
+| `min-block-size` | Minimum logical height set karta hai |
+| `max-block-size` | Maximum logical height set karta hai |
+| `aspect-ratio` | Width aur height ka preferred ratio set karta hai |
+| `box-sizing` | Element ki dimensions calculate karne ka method control karta hai |
+| `object-fit` | Image/video ko uske box mein fit karta hai |
+| `object-position` | Box ke andar image/video ki position set karta hai |
+| `overflow` | Box se bahar jaane wale content ko control karta hai |
 
 ### Example
 
@@ -1021,9 +1019,9 @@ img {
 
 # 13. CSS Box Model
 
-Every HTML element is represented as a rectangular box in CSS.
+CSS mein har HTML element ko ek rectangular box ke form mein represent kiya jata hai.
 
-The CSS Box Model consists of four main parts:
+CSS Box Model ke four main parts hote hain:
 
 1. Content
 2. Padding
@@ -1032,19 +1030,19 @@ The CSS Box Model consists of four main parts:
 
 ## 1. Content
 
-The actual text, image or other content inside the element.
+Element ke andar present actual text, image ya doosra content.
 
 ## 2. Padding
 
-Space between the content and the border.
+Content aur border ke beech ki space ko padding kehte hain.
 
 ## 3. Border
 
-The line surrounding the padding and content.
+Padding aur content ke around jo boundary line hoti hai, use border kehte hain.
 
 ## 4. Margin
 
-Space outside the border.
+Border ke bahar available space ko margin kehte hain.
 
 ### Box Model Structure
 
@@ -1065,11 +1063,11 @@ Space outside the border.
 
 ## box-sizing Property
 
-The `box-sizing` property controls how the width and height of an element are calculated.
+`box-sizing` property decide karti hai ki kisi element ki width aur height kis tarah calculate hogi.
 
 ### content-box
 
-Default value. Padding and border are added outside the declared width and height.
+Ye default value hai. Ismein padding aur border, declared width aur height ke bahar add hote hain.
 
 ```css
 .box {
@@ -1079,7 +1077,7 @@ Default value. Padding and border are added outside the declared width and heigh
 
 ### border-box
 
-Declared width and height include padding and border.
+Ismein declared width aur height ke andar padding aur border bhi include hote hain.
 
 ```css
 * {
@@ -1103,25 +1101,27 @@ Declared width and height include padding and border.
 
 # 14. Margin Properties
 
-Margin creates space outside an element's border.
+Margin ka use kisi element ke border ke bahar space create karne ke liye hota hai.
 
 ## Margin Properties
 
 | Property | Use |
 |---|---|
-| `margin` | Shorthand for all sides |
-| `margin-top` | Top margin |
-| `margin-right` | Right margin |
-| `margin-bottom` | Bottom margin |
-| `margin-left` | Left margin |
-| `margin-inline` | Inline-start and inline-end margin |
-| `margin-block` | Block-start and block-end margin |
-| `margin-inline-start` | Inline-start margin |
-| `margin-inline-end` | Inline-end margin |
-| `margin-block-start` | Block-start margin |
-| `margin-block-end` | Block-end margin |
+| `margin` | Sabhi sides par margin set karta hai |
+| `margin-top` | Top margin set karta hai |
+| `margin-right` | Right margin set karta hai |
+| `margin-bottom` | Bottom margin set karta hai |
+| `margin-left` | Left margin set karta hai |
+| `margin-inline` | Inline-start aur inline-end margin set karta hai |
+| `margin-block` | Block-start aur block-end margin set karta hai |
+| `margin-inline-start` | Inline-start margin set karta hai |
+| `margin-inline-end` | Inline-end margin set karta hai |
+| `margin-block-start` | Block-start margin set karta hai |
+| `margin-block-end` | Block-end margin set karta hai |
 
 ## 1. Margin on All Sides
+
+Ek hi value se element ki four sides par equal margin set kar sakte hain.
 
 ```css
 .box {
@@ -1137,8 +1137,8 @@ Margin creates space outside an element's border.
 }
 ```
 
-- `10px` — Top and bottom
-- `20px` — Left and right
+- `10px` — Top aur bottom margin
+- `20px` — Left aur right margin
 
 ## 3. Different Margin on Each Side
 
@@ -1168,6 +1168,8 @@ Order:
 
 ## 5. Centering a Block Element
 
+`margin-inline: auto` ka use constrained width wale block element ko horizontally center karne ke liye kar sakte hain.
+
 ```css
 .container {
     max-width: 1000px;
@@ -1175,29 +1177,27 @@ Order:
 }
 ```
 
-`auto` distributes the available inline space equally when the element has a constrained width.
-
 ---
 
 # 15. Padding Properties
 
-Padding creates space inside an element's border, around its content.
+Padding ka use kisi element ke content aur border ke beech space create karne ke liye hota hai.
 
 ## Padding Properties
 
 | Property | Use |
 |---|---|
-| `padding` | Shorthand for all sides |
-| `padding-top` | Top padding |
-| `padding-right` | Right padding |
-| `padding-bottom` | Bottom padding |
-| `padding-left` | Left padding |
-| `padding-inline` | Inline-start and inline-end padding |
-| `padding-block` | Block-start and block-end padding |
-| `padding-inline-start` | Inline-start padding |
-| `padding-inline-end` | Inline-end padding |
-| `padding-block-start` | Block-start padding |
-| `padding-block-end` | Block-end padding |
+| `padding` | Sabhi sides par padding set karta hai |
+| `padding-top` | Top padding set karta hai |
+| `padding-right` | Right padding set karta hai |
+| `padding-bottom` | Bottom padding set karta hai |
+| `padding-left` | Left padding set karta hai |
+| `padding-inline` | Inline-start aur inline-end padding set karta hai |
+| `padding-block` | Block-start aur block-end padding set karta hai |
+| `padding-inline-start` | Inline-start padding set karta hai |
+| `padding-inline-end` | Inline-end padding set karta hai |
+| `padding-block-start` | Block-start padding set karta hai |
+| `padding-block-end` | Block-end padding set karta hai |
 
 ## 1. Padding on All Sides
 
@@ -1253,27 +1253,27 @@ Order:
 
 # 16. Border and Outline
 
-Border creates a visible boundary around an element.
+Border kisi element ke around visible boundary create karta hai.
 
-Outline draws a line outside the border.
+Outline border ke bahar ek additional line draw karta hai.
 
 ## Border Properties
 
 | Property | Use |
 |---|---|
-| `border` | Shorthand for border width, style and color |
-| `border-width` | Sets border thickness |
-| `border-style` | Sets border style |
-| `border-color` | Sets border color |
-| `border-top` | Sets top border |
-| `border-right` | Sets right border |
-| `border-bottom` | Sets bottom border |
-| `border-left` | Sets left border |
-| `border-radius` | Rounds the corners |
-| `border-top-left-radius` | Rounds top-left corner |
-| `border-top-right-radius` | Rounds top-right corner |
-| `border-bottom-left-radius` | Rounds bottom-left corner |
-| `border-bottom-right-radius` | Rounds bottom-right corner |
+| `border` | Width, style aur color ki shorthand property |
+| `border-width` | Border ki thickness set karta hai |
+| `border-style` | Border ka style set karta hai |
+| `border-color` | Border ka color set karta hai |
+| `border-top` | Top border set karta hai |
+| `border-right` | Right border set karta hai |
+| `border-bottom` | Bottom border set karta hai |
+| `border-left` | Left border set karta hai |
+| `border-radius` | Corners ko round karta hai |
+| `border-top-left-radius` | Top-left corner round karta hai |
+| `border-top-right-radius` | Top-right corner round karta hai |
+| `border-bottom-left-radius` | Bottom-left corner round karta hai |
+| `border-bottom-right-radius` | Bottom-right corner round karta hai |
 
 ## Border Style Values
 
@@ -1320,11 +1320,11 @@ border-style: none;
 
 | Property | Use |
 |---|---|
-| `outline` | Shorthand for outline settings |
-| `outline-width` | Sets outline thickness |
-| `outline-style` | Sets outline style |
-| `outline-color` | Sets outline color |
-| `outline-offset` | Sets gap between border and outline |
+| `outline` | Outline settings ki shorthand property |
+| `outline-width` | Outline ki thickness set karta hai |
+| `outline-style` | Outline ka style set karta hai |
+| `outline-color` | Outline ka color set karta hai |
+| `outline-offset` | Border aur outline ke beech gap set karta hai |
 
 ### Example
 
@@ -1337,36 +1337,36 @@ button {
 }
 ```
 
-**Note:** Outline does not take up space in the element's box model. Avoid removing keyboard focus outlines without providing a visible replacement.
+**Note:** Outline element ke Box Model mein extra space nahi leta. Keyboard focus ke outline ko remove karne se pehle visible replacement zaroor provide karein.
 
 ---
 
 # 17. Font Properties
 
-Font properties control the appearance of text.
+Font properties ka use text ka appearance control karne ke liye hota hai.
 
 ## Font Properties
 
 | Property | Use |
 |---|---|
-| `font-family` | Sets the font typeface |
-| `font-size` | Sets text size |
-| `font-weight` | Sets text thickness |
-| `font-style` | Sets normal, italic or oblique style |
-| `font-stretch` | Controls font width when supported |
-| `font-variant` | Controls alternate glyph forms |
-| `font` | Shorthand for several font settings |
-| `line-height` | Controls line spacing |
-| `letter-spacing` | Controls spacing between characters |
-| `word-spacing` | Controls spacing between words |
-| `font-kerning` | Controls spacing adjustments between letter pairs |
-| `font-optical-sizing` | Controls optical sizing for variable fonts |
-| `font-feature-settings` | Controls low-level font features |
-| `font-variation-settings` | Controls low-level variable font settings |
+| `font-family` | Font typeface set karta hai |
+| `font-size` | Text ka size set karta hai |
+| `font-weight` | Text ki thickness set karta hai |
+| `font-style` | Normal, italic ya oblique style set karta hai |
+| `font-stretch` | Supported fonts ki width control karta hai |
+| `font-variant` | Alternate glyph forms control karta hai |
+| `font` | Multiple font settings ki shorthand property |
+| `line-height` | Lines ke beech vertical spacing control karta hai |
+| `letter-spacing` | Characters ke beech spacing control karta hai |
+| `word-spacing` | Words ke beech spacing control karta hai |
+| `font-kerning` | Letter pairs ke beech spacing adjustments control karta hai |
+| `font-optical-sizing` | Variable fonts ki optical sizing control karta hai |
+| `font-feature-settings` | Low-level font features control karta hai |
+| `font-variation-settings` | Variable font settings control karta hai |
 
 ## 1. Font Family
 
-Defines which font should be used.
+Ye define karta hai ki text ke liye kaunsa font use hoga.
 
 ```css
 body {
@@ -1376,7 +1376,7 @@ body {
 
 ## 2. Font Size
 
-Controls the size of text.
+Text ka size control karta hai.
 
 ```css
 h1 {
@@ -1386,7 +1386,7 @@ h1 {
 
 ## 3. Font Weight
 
-Controls the thickness of text.
+Text ki thickness control karta hai.
 
 ```css
 p {
@@ -1428,7 +1428,7 @@ p {
 
 ## 5. Line Height
 
-Controls the vertical spacing between lines.
+Text ki lines ke beech vertical spacing control karta hai.
 
 ```css
 p {
@@ -1438,7 +1438,7 @@ p {
 
 ## 6. Letter Spacing
 
-Controls the space between characters.
+Characters ke beech space control karta hai.
 
 ```css
 h1 {
@@ -1448,7 +1448,7 @@ h1 {
 
 ## 7. Word Spacing
 
-Controls the space between words.
+Words ke beech space control karta hai.
 
 ```css
 p {
@@ -1468,33 +1468,33 @@ p {
 
 # 18. Text Properties
 
-Text properties control the alignment, decoration, spacing and appearance of text.
+Text properties ka use text ki alignment, decoration, spacing aur overall appearance control karne ke liye hota hai.
 
 ## Text Properties
 
 | Property | Use |
 |---|---|
-| `text-align` | Aligns text horizontally |
-| `text-align-last` | Aligns the last line of text |
-| `text-decoration` | Adds or removes text decoration |
-| `text-decoration-line` | Sets underline, overline or line-through |
-| `text-decoration-color` | Sets decoration color |
-| `text-decoration-style` | Sets decoration style |
-| `text-decoration-thickness` | Sets decoration thickness |
-| `text-underline-offset` | Sets distance between text and underline |
-| `text-transform` | Converts text to uppercase, lowercase or capitalize |
-| `text-indent` | Indents the first line |
-| `text-overflow` | Controls how clipped overflowing text appears |
-| `text-shadow` | Adds a shadow behind text |
-| `text-wrap` | Controls text wrapping behaviour |
-| `white-space` | Controls spaces and line breaks |
-| `overflow-wrap` | Allows long words to wrap |
-| `word-break` | Controls word-breaking rules |
-| `hyphens` | Controls hyphenation |
-| `direction` | Sets text direction |
-| `writing-mode` | Sets horizontal or vertical text flow |
-| `vertical-align` | Aligns inline or table-cell content vertically |
-| `user-select` | Controls whether text can be selected |
+| `text-align` | Text ko horizontally align karta hai |
+| `text-align-last` | Text ki last line ko align karta hai |
+| `text-decoration` | Text decoration add ya remove karta hai |
+| `text-decoration-line` | Underline, overline ya line-through set karta hai |
+| `text-decoration-color` | Decoration ka color set karta hai |
+| `text-decoration-style` | Decoration ka style set karta hai |
+| `text-decoration-thickness` | Decoration ki thickness set karta hai |
+| `text-underline-offset` | Text aur underline ke beech distance set karta hai |
+| `text-transform` | Text ko uppercase, lowercase ya capitalize karta hai |
+| `text-indent` | First line ko indent karta hai |
+| `text-overflow` | Extra text display hone ka behaviour control karta hai |
+| `text-shadow` | Text ke peeche shadow add karta hai |
+| `text-wrap` | Text wrapping behaviour control karta hai |
+| `white-space` | Spaces aur line breaks control karta hai |
+| `overflow-wrap` | Long words ko wrap hone deta hai |
+| `word-break` | Word breaking rules control karta hai |
+| `hyphens` | Word hyphenation control karta hai |
+| `direction` | Text direction set karta hai |
+| `writing-mode` | Horizontal ya vertical text flow set karta hai |
+| `vertical-align` | Inline ya table-cell content ko vertically align karta hai |
+| `user-select` | Text select karne ka behaviour control karta hai |
 
 ## 1. Text Alignment
 
@@ -1567,6 +1567,8 @@ p {
 
 ## 6. White Space
 
+`white-space` property text ke spaces aur line breaks ka behaviour control karti hai.
+
 ```css
 .text {
     white-space: normal;
@@ -1593,7 +1595,7 @@ white-space: pre-line;
 
 ## 8. Text Overflow
 
-Controls how text appears when it overflows its available space.
+Jab text available space se bahar nikalta hai, tab `text-overflow` control karta hai ki extra text kaise show hoga.
 
 ```css
 .text {
@@ -1605,7 +1607,7 @@ Controls how text appears when it overflows its available space.
 
 ## Single-Line Ellipsis
 
-Used when you want to display `...` at the end of text that does not fit.
+Jab text available space mein fit nahi hota, toh uske end mein `...` show karne ke liye iska use hota hai.
 
 ```css
 .ellipsis {
@@ -1619,23 +1621,23 @@ Used when you want to display `...` at the end of text that does not fit.
 
 # 19. Display, Visibility and Overflow
 
-The `display` property controls how an element participates in the layout.
+`display` property control karti hai ki koi element webpage ke layout mein kis tarah behave karega.
 
 ## Display Properties
 
 | Value | Use |
 |---|---|
-| `block` | Starts on a new line and usually fills available width |
-| `inline` | Flows within text |
-| `inline-block` | Flows inline but supports width and height |
-| `none` | Removes element from the layout |
-| `flex` | Creates a Flexbox container |
-| `inline-flex` | Creates an inline-level Flexbox container |
-| `grid` | Creates a Grid container |
-| `inline-grid` | Creates an inline-level Grid container |
-| `flow-root` | Creates a block formatting context |
-| `contents` | Removes the element's own layout box |
-| `list-item` | Displays an element like a list item |
+| `block` | New line se start hota hai aur usually available width leta hai |
+| `inline` | Text ke saath same line mein flow karta hai |
+| `inline-block` | Inline rehta hai, lekin width aur height support karta hai |
+| `none` | Element ko layout se remove karta hai |
+| `flex` | Flexbox container create karta hai |
+| `inline-flex` | Inline-level Flexbox container create karta hai |
+| `grid` | Grid container create karta hai |
+| `inline-grid` | Inline-level Grid container create karta hai |
+| `flow-root` | Block formatting context create karta hai |
+| `contents` | Element ka apna layout box remove karta hai |
+| `list-item` | Element ko list item ki tarah display karta hai |
 
 ### 1. Display Block
 
@@ -1671,7 +1673,7 @@ span {
 }
 ```
 
-The element is removed from the layout.
+Isse element layout se remove ho jata hai.
 
 ### 5. Display Flex
 
@@ -1693,15 +1695,15 @@ The element is removed from the layout.
 
 | Property | Use |
 |---|---|
-| `visibility` | Shows or hides an element |
-| `opacity` | Controls transparency |
-| `overflow` | Controls overflowing content |
-| `overflow-x` | Controls horizontal overflow |
-| `overflow-y` | Controls vertical overflow |
-| `overflow-wrap` | Allows long words to wrap |
-| `clip-path` | Clips an element to a shape |
-| `contain` | Limits certain layout, paint and other effects |
-| `content-visibility` | Allows rendering optimizations |
+| `visibility` | Element ko show ya hide karta hai |
+| `opacity` | Transparency control karta hai |
+| `overflow` | Extra content control karta hai |
+| `overflow-x` | Horizontal overflow control karta hai |
+| `overflow-y` | Vertical overflow control karta hai |
+| `overflow-wrap` | Long words ko wrap hone deta hai |
+| `clip-path` | Element ko kisi shape mein clip karta hai |
+| `contain` | Layout, paint aur doosre effects ko limit karta hai |
+| `content-visibility` | Rendering optimization mein help karta hai |
 
 ## Visibility
 
@@ -1711,7 +1713,7 @@ The element is removed from the layout.
 }
 ```
 
-The element becomes invisible but keeps its layout space.
+Element invisible ho jata hai, lekin uski layout space bani rehti hai.
 
 ## Opacity
 
@@ -1725,7 +1727,7 @@ Value range:
 
 - `0` — Completely transparent
 - `0.5` — 50% opacity
-- `1` — Fully visible
+- `1` — Completely visible
 
 ## Overflow
 
@@ -1750,21 +1752,21 @@ overflow: auto;
 
 # 20. CSS Positioning
 
-The `position` property controls how an element is positioned in a document.
+`position` property control karti hai ki kisi element ko webpage par kis tarah position kiya jayega.
 
 ## Position Values
 
 | Value | Use |
 |---|---|
-| `static` | Default position in normal document flow |
-| `relative` | Stays in normal flow but can be offset |
-| `absolute` | Positioned relative to its containing block |
-| `fixed` | Usually positioned relative to the viewport |
-| `sticky` | Behaves relatively until it reaches a scroll threshold |
+| `static` | Normal document flow mein default position |
+| `relative` | Normal flow mein rehta hai, lekin offset ho sakta hai |
+| `absolute` | Apne containing block ke according position hota hai |
+| `fixed` | Usually viewport ke according position hota hai |
+| `sticky` | Scroll threshold tak relative ki tarah behave karta hai |
 
 ## 1. Static Position
 
-Default positioning of HTML elements.
+HTML elements ki default positioning hoti hai.
 
 ```css
 .box {
@@ -1774,7 +1776,7 @@ Default positioning of HTML elements.
 
 ## 2. Relative Position
 
-Element stays in its normal document flow but can be moved from its original position.
+Element apni normal document flow mein rehta hai, lekin apni original position se move ho sakta hai.
 
 ```css
 .box {
@@ -1786,7 +1788,7 @@ Element stays in its normal document flow but can be moved from its original pos
 
 ## 3. Absolute Position
 
-Element is positioned relative to its nearest positioned containing block.
+Element apne nearest positioned containing block ke according position hota hai.
 
 ```css
 .parent {
@@ -1802,7 +1804,7 @@ Element is positioned relative to its nearest positioned containing block.
 
 ## 4. Fixed Position
 
-Element is positioned relative to the viewport in typical cases and stays in place while scrolling.
+Element usually viewport ke according position hota hai aur scrolling ke dauran apni position par rehta hai.
 
 ```css
 .button {
@@ -1814,7 +1816,7 @@ Element is positioned relative to the viewport in typical cases and stays in pla
 
 ## 5. Sticky Position
 
-Element behaves like a relatively positioned element until it reaches the specified scroll position.
+Element normal flow mein rehta hai, lekin specified scroll position par pahunchne ke baad sticky behave karta hai.
 
 ```css
 .header {
@@ -1827,14 +1829,14 @@ Element behaves like a relatively positioned element until it reaches the specif
 
 | Property | Use |
 |---|---|
-| `top` | Distance from top |
-| `right` | Distance from right |
-| `bottom` | Distance from bottom |
-| `left` | Distance from left |
-| `inset` | Shorthand for top, right, bottom and left |
-| `inset-block` | Logical block-axis offsets |
-| `inset-inline` | Logical inline-axis offsets |
-| `z-index` | Controls stacking order within stacking-context rules |
+| `top` | Top se distance set karta hai |
+| `right` | Right se distance set karta hai |
+| `bottom` | Bottom se distance set karta hai |
+| `left` | Left se distance set karta hai |
+| `inset` | Top, right, bottom aur left ki shorthand property |
+| `inset-block` | Logical block-axis offsets set karta hai |
+| `inset-inline` | Logical inline-axis offsets set karta hai |
+| `z-index` | Stacking order control karta hai |
 
 ### Z-Index Example
 
@@ -1852,21 +1854,21 @@ Element behaves like a relatively positioned element until it reaches the specif
 }
 ```
 
-**Note:** `z-index` works according to stacking-context rules. A larger number does not always place an element above every other element.
+**Note:** `z-index` stacking-context rules ke according work karta hai. Hamesha larger number wala element har doosre element ke upar nahi aata.
 
 ---
 
 # 21. Flexbox
 
-Flexbox is a one-dimensional layout system used to arrange elements in a row or column.
+Flexbox ek one-dimensional layout system hai. Iska use elements ko row ya column mein arrange karne ke liye hota hai.
 
-It is useful for:
+Flexbox useful hai:
 
-- Centering elements
-- Creating navigation bars
-- Aligning images
-- Creating card layouts
-- Managing spacing between elements
+- Elements ko center karne ke liye
+- Navigation bars banane ke liye
+- Images align karne ke liye
+- Card layouts banane ke liye
+- Elements ke beech spacing manage karne ke liye
 
 ## Basic Flexbox Example
 
@@ -1885,20 +1887,20 @@ It is useful for:
 
 | Property | Use |
 |---|---|
-| `display` | Creates a Flexbox container |
-| `flex-direction` | Sets direction of items |
-| `flex-wrap` | Controls item wrapping |
-| `flex-flow` | Shorthand for direction and wrapping |
-| `justify-content` | Aligns items along the main axis |
-| `align-items` | Aligns items along the cross axis |
-| `align-content` | Controls spacing between flex lines |
-| `gap` | Sets row and column gaps |
-| `row-gap` | Sets gaps between rows |
-| `column-gap` | Sets gaps between columns |
+| `display` | Flexbox container create karta hai |
+| `flex-direction` | Items ki direction set karta hai |
+| `flex-wrap` | Items ko next line mein wrap karna control karta hai |
+| `flex-flow` | Direction aur wrapping ki shorthand property |
+| `justify-content` | Main axis par items align karta hai |
+| `align-items` | Cross axis par items align karta hai |
+| `align-content` | Multiple flex lines ke beech spacing control karta hai |
+| `gap` | Rows aur columns ke beech gap set karta hai |
+| `row-gap` | Rows ke beech gap set karta hai |
+| `column-gap` | Columns ke beech gap set karta hai |
 
 ## 1. Flex Direction
 
-Controls the direction of flex items.
+Flex items kis direction mein arrange honge, ye control karta hai.
 
 ```css
 .container {
@@ -1918,7 +1920,7 @@ flex-direction: column-reverse;
 
 ## 2. Justify Content
 
-Aligns items along the main axis.
+Main axis par items ki alignment control karta hai.
 
 ```css
 .container {
@@ -1940,7 +1942,7 @@ justify-content: space-evenly;
 
 ## 3. Align Items
 
-Aligns items along the cross axis.
+Cross axis par items ki alignment control karta hai.
 
 ```css
 .container {
@@ -1961,7 +1963,7 @@ align-items: baseline;
 
 ## 4. Flex Wrap
 
-Controls whether flex items stay on one line or move to another line.
+Control karta hai ki items ek hi line mein rahenge ya space kam hone par next line mein chale jayenge.
 
 ```css
 .container {
@@ -1980,7 +1982,7 @@ flex-wrap: wrap-reverse;
 
 ## 5. Flex Flow
 
-Shorthand for `flex-direction` and `flex-wrap`.
+`flex-direction` aur `flex-wrap` ki shorthand property hai.
 
 ```css
 .container {
@@ -1990,7 +1992,7 @@ Shorthand for `flex-direction` and `flex-wrap`.
 
 ## 6. Align Content
 
-Controls spacing between multiple flex lines when there is extra cross-axis space.
+Jab Flexbox container mein multiple lines hoti hain, tab `align-content` un lines ke beech spacing control karta hai.
 
 ```css
 .container {
@@ -2004,12 +2006,12 @@ Controls spacing between multiple flex lines when there is extra cross-axis spac
 
 | Property | Use |
 |---|---|
-| `order` | Changes visual order of an item |
-| `flex` | Shorthand for grow, shrink and basis |
-| `flex-grow` | Controls how an item can grow |
-| `flex-shrink` | Controls how an item can shrink |
-| `flex-basis` | Sets initial main size |
-| `align-self` | Overrides cross-axis alignment for an individual item |
+| `order` | Item ka visual order change karta hai |
+| `flex` | Grow, shrink aur basis ki shorthand property |
+| `flex-grow` | Item ko available extra space mein grow karne deta hai |
+| `flex-shrink` | Item ko space kam hone par shrink karne deta hai |
+| `flex-basis` | Item ka initial main size set karta hai |
+| `align-self` | Individual item ki cross-axis alignment change karta hai |
 
 ### Flex Grow
 
@@ -2067,22 +2069,22 @@ Controls spacing between multiple flex lines when there is extra cross-axis spac
 
 - `justify-content` — Main axis
 - `align-items` — Cross axis
-- `flex-direction` — Direction of items
-- `gap` — Space between items
+- `flex-direction` — Items ki direction
+- `gap` — Items ke beech space
 
 ---
 
 # 22. CSS Grid
 
-CSS Grid is a two-dimensional layout system used to arrange items in rows and columns.
+CSS Grid ek two-dimensional layout system hai. Iska use elements ko rows aur columns dono mein arrange karne ke liye hota hai.
 
-It is useful for:
+CSS Grid useful hai:
 
-- Product grids
-- Image galleries
-- Dashboard layouts
-- Website sections
-- Responsive card layouts
+- Product grids banane ke liye
+- Image galleries ke liye
+- Dashboard layouts ke liye
+- Website sections arrange karne ke liye
+- Responsive card layouts ke liye
 
 ## Basic Grid Example
 
@@ -2098,26 +2100,26 @@ It is useful for:
 
 | Property | Use |
 |---|---|
-| `grid-template-columns` | Defines column sizes |
-| `grid-template-rows` | Defines row sizes |
-| `grid-template-areas` | Defines named layout areas |
-| `grid-template` | Shorthand for explicit grid definitions |
-| `grid-auto-columns` | Sets sizes of implicit columns |
-| `grid-auto-rows` | Sets sizes of implicit rows |
-| `grid-auto-flow` | Controls automatic item placement |
-| `gap` | Sets gaps between rows and columns |
-| `row-gap` | Sets gaps between rows |
-| `column-gap` | Sets gaps between columns |
-| `justify-items` | Aligns items along the inline axis |
-| `align-items` | Aligns items along the block axis |
-| `place-items` | Shorthand for align-items and justify-items |
-| `justify-content` | Aligns grid content along the inline axis |
-| `align-content` | Aligns grid content along the block axis |
-| `place-content` | Shorthand for content alignment |
+| `grid-template-columns` | Columns ke sizes define karta hai |
+| `grid-template-rows` | Rows ke sizes define karta hai |
+| `grid-template-areas` | Named layout areas define karta hai |
+| `grid-template` | Explicit grid definitions ki shorthand property |
+| `grid-auto-columns` | Automatically created columns ka size set karta hai |
+| `grid-auto-rows` | Automatically created rows ka size set karta hai |
+| `grid-auto-flow` | Automatic item placement control karta hai |
+| `gap` | Rows aur columns ke beech gap set karta hai |
+| `row-gap` | Rows ke beech gap set karta hai |
+| `column-gap` | Columns ke beech gap set karta hai |
+| `justify-items` | Items ko inline axis par align karta hai |
+| `align-items` | Items ko block axis par align karta hai |
+| `place-items` | Align aur justify items ki shorthand property |
+| `justify-content` | Grid content ko inline axis par align karta hai |
+| `align-content` | Grid content ko block axis par align karta hai |
+| `place-content` | Content alignment ki shorthand property |
 
 ## 1. Grid Template Columns
 
-Defines the number and size of columns.
+Columns ki number aur unka size define karta hai.
 
 ```css
 .container {
@@ -2146,7 +2148,7 @@ Defines the number and size of columns.
 
 ## 2. Grid Template Rows
 
-Defines the height of rows.
+Rows ki height define karta hai.
 
 ```css
 .container {
@@ -2157,7 +2159,7 @@ Defines the height of rows.
 
 ## 3. Gap
 
-Creates space between rows and columns.
+Rows aur columns ke beech space create karta hai.
 
 ```css
 .container {
@@ -2166,7 +2168,7 @@ Creates space between rows and columns.
 }
 ```
 
-Separate row and column gaps:
+Separate row aur column gaps:
 
 ```css
 .container {
@@ -2177,7 +2179,7 @@ Separate row and column gaps:
 
 ## 4. Grid Template Areas
 
-Defines named areas inside a grid.
+Grid ke andar named areas define karta hai.
 
 ```css
 .container {
@@ -2210,12 +2212,12 @@ Defines named areas inside a grid.
 
 | Property | Use |
 |---|---|
-| `grid-column` | Sets column start/end placement |
-| `grid-row` | Sets row start/end placement |
-| `grid-area` | Sets placement or a named area |
-| `justify-self` | Aligns an individual item along the inline axis |
-| `align-self` | Aligns an individual item along the block axis |
-| `place-self` | Shorthand for individual item alignment |
+| `grid-column` | Column start aur end placement set karta hai |
+| `grid-row` | Row start aur end placement set karta hai |
+| `grid-area` | Item ki position ya named area set karta hai |
+| `justify-self` | Individual item ko inline axis par align karta hai |
+| `align-self` | Individual item ko block axis par align karta hai |
+| `place-self` | Individual item alignment ki shorthand property |
 
 ### Grid Column
 
@@ -2243,13 +2245,13 @@ Defines named areas inside a grid.
 }
 ```
 
-This automatically adjusts the number of columns according to the available space.
+Isse available space ke according columns ki number automatically adjust ho jati hai.
 
 ---
 
 # 23. Images and Media
 
-CSS provides properties to control how images and videos appear on a webpage.
+CSS properties ka use webpage par images aur videos ka size, position aur appearance control karne ke liye hota hai.
 
 ### Responsive Image and Video
 
@@ -2265,15 +2267,15 @@ video {
 
 | Property | Use |
 |---|---|
-| `object-fit` | Controls how image/video fits its box |
-| `object-position` | Sets content position inside its box |
-| `aspect-ratio` | Sets preferred width-to-height ratio |
-| `image-rendering` | Controls image scaling preferences |
-| `vertical-align` | Aligns inline images vertically |
+| `object-fit` | Image/video ko uske box mein fit karta hai |
+| `object-position` | Box ke andar content ki position set karta hai |
+| `aspect-ratio` | Preferred width-to-height ratio set karta hai |
+| `image-rendering` | Image scaling ka behaviour control karta hai |
+| `vertical-align` | Inline images ko vertically align karta hai |
 
 ## Object Fit
 
-Controls how an image or video fits inside its container.
+Ye control karta hai ki image ya video apne container ke andar kis tarah fit hoga.
 
 ### Common Values
 
@@ -2298,7 +2300,7 @@ object-fit: scale-down;
 
 ## Object Position
 
-Controls the position of the image inside its container.
+Image ko uske container ke andar kis position par show karna hai, ye control karta hai.
 
 ```css
 img {
@@ -2318,7 +2320,7 @@ object-position: right;
 
 ## Aspect Ratio
 
-Defines the preferred width-to-height ratio.
+Image ya element ka preferred width-to-height ratio define karta hai.
 
 ```css
 .image {
@@ -2330,16 +2332,16 @@ Defines the preferred width-to-height ratio.
 
 # 24. Lists and Tables
 
-CSS provides properties to style HTML lists and tables.
+CSS properties ka use HTML lists aur tables ki styling aur appearance control karne ke liye hota hai.
 
 ## 1. List Properties
 
 | Property | Use |
 |---|---|
-| `list-style` | Shorthand for list marker settings |
-| `list-style-type` | Sets marker type |
-| `list-style-position` | Sets marker position |
-| `list-style-image` | Uses an image as a list marker |
+| `list-style` | List marker settings ki shorthand property |
+| `list-style-type` | List marker ka type set karta hai |
+| `list-style-position` | List marker ki position set karta hai |
+| `list-style-image` | List marker ke liye image use karta hai |
 
 ### List Style Type
 
@@ -2396,11 +2398,11 @@ ul {
 
 | Property | Use |
 |---|---|
-| `border-collapse` | Controls whether table borders collapse or remain separate |
-| `border-spacing` | Sets spacing between cell borders |
-| `table-layout` | Controls table column sizing behaviour |
-| `caption-side` | Sets caption placement |
-| `empty-cells` | Controls borders/backgrounds of empty cells |
+| `border-collapse` | Table borders collapse honge ya separate rahenge, control karta hai |
+| `border-spacing` | Table cells ke beech spacing set karta hai |
+| `table-layout` | Table columns ka sizing behaviour control karta hai |
+| `caption-side` | Table caption ki position set karta hai |
+| `empty-cells` | Empty cells ke borders/background control karta hai |
 
 ### Example
 
@@ -2448,21 +2450,21 @@ table {
 
 # 25. Forms and Controls
 
-CSS can style text fields, dropdowns, buttons, checkboxes, radio buttons and other form controls.
+CSS ka use text fields, dropdowns, buttons, checkboxes, radio buttons aur doosre form controls ko style karne ke liye hota hai.
 
 ## Common Properties and Selectors
 
 | Property / Selector | Use |
 |---|---|
-| `accent-color` | Sets accent color of supported controls |
-| `appearance` | Controls native appearance of a control |
-| `caret-color` | Sets input text cursor color |
-| `resize` | Controls whether an element can be resized |
-| `field-sizing` | Controls content-based sizing where supported |
-| `::placeholder` | Styles placeholder text |
-| `:focus` | Selects an element when it has focus |
-| `:disabled` | Selects disabled controls |
-| `:checked` | Selects checked checkboxes and radio buttons |
+| `accent-color` | Supported controls ka accent color set karta hai |
+| `appearance` | Control ka native appearance control karta hai |
+| `caret-color` | Input text cursor ka color set karta hai |
+| `resize` | Element ko resize karne ka behaviour control karta hai |
+| `field-sizing` | Supported browsers mein content-based sizing control karta hai |
+| `::placeholder` | Placeholder text ko style karta hai |
+| `:focus` | Focus receive karne wale element ko select karta hai |
+| `:disabled` | Disabled controls ko select karta hai |
+| `:checked` | Checked checkbox aur radio buttons ko select karta hai |
 
 ## 1. Input Styling
 
@@ -2538,21 +2540,21 @@ button {
 
 # 26. Cursor and Interaction
 
-These properties control how users interact with elements using a mouse, keyboard or touch input.
+In properties ka use control karta hai ki user mouse, keyboard ya touch input ke through elements ke saath kis tarah interact karega.
 
 ## Common Properties
 
 | Property | Use |
 |---|---|
-| `cursor` | Controls cursor appearance |
-| `pointer-events` | Controls whether an element can be a pointer target |
-| `user-select` | Controls whether text can be selected |
-| `touch-action` | Controls touch gesture handling |
-| `scroll-behavior` | Sets scrolling behaviour |
-| `scroll-margin` | Sets space around a target when scrolling to it |
-| `scroll-padding` | Sets inset of a scroll container |
-| `overscroll-behavior` | Controls scroll chaining and overscroll behaviour |
-| `resize` | Allows resizing where supported |
+| `cursor` | Cursor ka appearance control karta hai |
+| `pointer-events` | Element pointer interaction receive karega ya nahi, control karta hai |
+| `user-select` | Text select karne ka behaviour control karta hai |
+| `touch-action` | Touch gestures ka behaviour control karta hai |
+| `scroll-behavior` | Scrolling ka behaviour set karta hai |
+| `scroll-margin` | Scroll target ke around space set karta hai |
+| `scroll-padding` | Scroll container ka inset set karta hai |
+| `overscroll-behavior` | Scroll chaining aur overscroll behaviour control karta hai |
+| `resize` | Supported elements ko resize karne deta hai |
 
 ## Common Cursor Values
 
@@ -2621,25 +2623,25 @@ section {
 
 # 27. Shadows and Visual Effects
 
-CSS provides different properties to create shadows, filters, transparency and visual effects.
+CSS mein different properties available hain jinki help se shadows, filters, transparency aur visual effects create kiye ja sakte hain.
 
 ## Common Properties
 
 | Property | Use |
 |---|---|
-| `box-shadow` | Adds shadow around an element's box |
-| `text-shadow` | Adds shadow behind text |
-| `filter` | Applies effects such as blur, grayscale or brightness |
-| `backdrop-filter` | Applies effects to content behind a translucent element |
-| `mix-blend-mode` | Controls how an element blends with its background |
-| `background-blend-mode` | Controls blending between background layers |
-| `opacity` | Sets element transparency |
-| `clip-path` | Clips an element to a shape |
-| `mask` | Masks visible areas where supported |
+| `box-shadow` | Element ke box ke around shadow add karta hai |
+| `text-shadow` | Text ke peeche shadow add karta hai |
+| `filter` | Blur, grayscale aur brightness jaise effects apply karta hai |
+| `backdrop-filter` | Transparent element ke peeche ke content par effects apply karta hai |
+| `mix-blend-mode` | Element ko background ke saath blend karta hai |
+| `background-blend-mode` | Background layers ke beech blending control karta hai |
+| `opacity` | Element ki transparency set karta hai |
+| `clip-path` | Element ko kisi shape mein clip karta hai |
+| `mask` | Supported browsers mein visible areas ko mask karta hai |
 
 ## 1. Box Shadow
 
-Adds a shadow around an element.
+Element ke around shadow add karta hai.
 
 ### Syntax
 
@@ -2657,7 +2659,7 @@ box-shadow: horizontal vertical blur spread color;
 
 ## 2. Text Shadow
 
-Adds a shadow behind text.
+Text ke peeche shadow add karta hai.
 
 ```css
 h1 {
@@ -2667,7 +2669,7 @@ h1 {
 
 ## 3. Filter
 
-Applies visual effects to an element.
+Element par visual effects apply karta hai.
 
 ### Grayscale
 
@@ -2705,7 +2707,7 @@ filter: opacity(50%);
 
 ## 4. Backdrop Filter
 
-Applies effects to the area behind an element.
+Element ke peeche visible area par visual effects apply karta hai.
 
 ```css
 .glass {
@@ -2716,7 +2718,7 @@ Applies effects to the area behind an element.
 
 ## 5. Clip Path
 
-Clips an element into a particular shape.
+Element ko kisi particular shape mein clip karta hai.
 
 ```css
 .circle {
@@ -2728,27 +2730,27 @@ Clips an element into a particular shape.
 
 # 28. Transform Properties
 
-Transforms are used to move, rotate, scale or skew an element without changing the normal document flow.
+CSS Transforms ka use element ko move, rotate, scale ya skew karne ke liye hota hai. Isse normal document flow change nahi hota.
 
 ## Transform Properties
 
 | Property | Use |
 |---|---|
-| `transform` | Applies transformations |
-| `transform-origin` | Sets point around which transformation occurs |
-| `transform-style` | Controls 3D child rendering |
-| `perspective` | Sets perspective depth for 3D transformations |
-| `perspective-origin` | Sets viewer position for perspective |
-| `backface-visibility` | Controls whether an element's back face is visible |
-| `translate` | Moves an element |
-| `rotate` | Rotates an element |
-| `scale` | Scales an element |
+| `transform` | Element par transformations apply karta hai |
+| `transform-origin` | Transformation ka starting point set karta hai |
+| `transform-style` | 3D child rendering control karta hai |
+| `perspective` | 3D transformation ki perspective depth set karta hai |
+| `perspective-origin` | Perspective ke viewer position ko set karta hai |
+| `backface-visibility` | Element ka back face visible hoga ya nahi, control karta hai |
+| `translate` | Element ko move karta hai |
+| `rotate` | Element ko rotate karta hai |
+| `scale` | Element ka size change karta hai |
 
 ## Common Transform Functions
 
 ### 1. Translate
 
-Moves an element.
+Element ko move karta hai.
 
 ```css
 .box {
@@ -2758,7 +2760,7 @@ Moves an element.
 
 ### 2. Translate X
 
-Moves an element horizontally.
+Element ko horizontally move karta hai.
 
 ```css
 .box {
@@ -2768,7 +2770,7 @@ Moves an element horizontally.
 
 ### 3. Translate Y
 
-Moves an element vertically.
+Element ko vertically move karta hai.
 
 ```css
 .box {
@@ -2778,7 +2780,7 @@ Moves an element vertically.
 
 ### 4. Rotate
 
-Rotates an element.
+Element ko rotate karta hai.
 
 ```css
 .box {
@@ -2788,7 +2790,7 @@ Rotates an element.
 
 ### 5. Scale
 
-Changes the size of an element.
+Element ka size change karta hai.
 
 ```css
 .box {
@@ -2798,7 +2800,7 @@ Changes the size of an element.
 
 ### 6. Skew
 
-Slants an element.
+Element ko slant karta hai.
 
 ```css
 .box {
@@ -2808,7 +2810,7 @@ Slants an element.
 
 ## Transform Origin
 
-Controls the point around which an element rotates or scales.
+Ye control karta hai ki element kis point ke around rotate ya scale hoga.
 
 ```css
 .box {
@@ -2841,21 +2843,23 @@ transform-origin: bottom right;
 
 # 29. Transition Properties
 
-Transitions make changes between CSS states appear smooth over a period of time.
+CSS Transitions ka use CSS states ke beech changes ko smooth banane ke liye hota hai.
+
+Example: Jab mouse pointer kisi button ke upar jata hai, toh button ka background color suddenly change hone ke bajay smoothly change ho sakta hai.
 
 ## Transition Properties
 
 | Property | Use |
 |---|---|
-| `transition-property` | Selects the property to transition |
-| `transition-duration` | Sets transition duration |
-| `transition-timing-function` | Controls speed curve |
-| `transition-delay` | Sets delay before transition starts |
-| `transition` | Shorthand for transition settings |
+| `transition-property` | Kaunsi property transition hogi, select karta hai |
+| `transition-duration` | Transition ka duration set karta hai |
+| `transition-timing-function` | Transition ki speed curve control karta hai |
+| `transition-delay` | Transition start hone se pehle delay set karta hai |
+| `transition` | Transition settings ki shorthand property |
 
 ## 1. Transition Property
 
-Defines which CSS property should change smoothly.
+Define karta hai ki kaunsi CSS property smoothly change hogi.
 
 ```css
 button {
@@ -2865,7 +2869,7 @@ button {
 
 ## 2. Transition Duration
 
-Defines how long the transition takes.
+Define karta hai ki transition complete hone mein kitna time lagega.
 
 ```css
 button {
@@ -2875,7 +2879,7 @@ button {
 
 ## 3. Transition Timing Function
 
-Controls the speed curve of the transition.
+Transition ki speed curve control karta hai.
 
 ```css
 transition-timing-function: ease;
@@ -2893,7 +2897,7 @@ ease-in-out;
 
 ## 4. Transition Delay
 
-Defines how long the browser waits before starting the transition.
+Transition start hone se pehle kitna wait karna hai, ye define karta hai.
 
 ```css
 button {
@@ -2919,9 +2923,9 @@ button {
 
 # 30. Animation Properties
 
-CSS animations allow elements to change their styles over time using `@keyframes`.
+CSS Animations ka use `@keyframes` ki help se elements ke styles ko time ke saath change karne ke liye hota hai.
 
-Unlike transitions, animations can run automatically and can have multiple stages.
+Transitions ke unlike, animations automatically run ho sakti hain aur unmein multiple stages define kiye ja sakte hain.
 
 ## Keyframes Example
 
@@ -2947,15 +2951,15 @@ Unlike transitions, animations can run automatically and can have multiple stage
 
 | Property | Use |
 |---|---|
-| `animation-name` | Sets keyframe name |
-| `animation-duration` | Sets animation duration |
-| `animation-timing-function` | Sets speed curve |
-| `animation-delay` | Sets delay |
-| `animation-iteration-count` | Sets how many times animation runs |
-| `animation-direction` | Sets animation direction |
-| `animation-fill-mode` | Controls styles before and after animation |
-| `animation-play-state` | Sets running or paused state |
-| `animation` | Shorthand for animation settings |
+| `animation-name` | Keyframes animation ka naam set karta hai |
+| `animation-duration` | Animation ka duration set karta hai |
+| `animation-timing-function` | Animation ki speed curve set karta hai |
+| `animation-delay` | Animation start hone se pehle delay set karta hai |
+| `animation-iteration-count` | Animation kitni baar chalegi, set karta hai |
+| `animation-direction` | Animation ki direction set karta hai |
+| `animation-fill-mode` | Animation se pehle aur baad styles control karta hai |
+| `animation-play-state` | Animation running ya paused hai, set karta hai |
+| `animation` | Animation settings ki shorthand property |
 
 ## 1. Animation Name
 
@@ -3042,11 +3046,11 @@ animation-timing-function: ease-in-out;
 
 # 31. Responsive Design and Media Queries
 
-Responsive design makes a website adapt to different screen sizes such as mobile, tablet and desktop.
+Responsive Design ka matlab hai website ko different screen sizes ke according adjust karna, jaise mobile, tablet aur desktop.
 
 ## What is a Media Query?
 
-A media query allows CSS rules to apply only when specific conditions are true.
+Media Query CSS ko specific conditions ke according apply karne ki facility deti hai.
 
 ### Syntax
 
@@ -3076,17 +3080,17 @@ A media query allows CSS rules to apply only when specific conditions are true.
 
 | Feature | Use |
 |---|---|
-| `min-width` | Applies styles at or above a viewport width |
-| `max-width` | Applies styles at or below a viewport width |
-| `orientation` | Detects portrait or landscape orientation |
-| `prefers-color-scheme` | Detects light or dark preference |
-| `prefers-reduced-motion` | Detects reduced motion preference |
-| `hover` | Checks whether primary input can hover |
-| `pointer` | Detects pointer accuracy, such as coarse or fine |
+| `min-width` | Given viewport width ya usse badi width par styles apply karta hai |
+| `max-width` | Given viewport width ya usse chhoti width par styles apply karta hai |
+| `orientation` | Portrait ya landscape orientation detect karta hai |
+| `prefers-color-scheme` | User ki light ya dark preference detect karta hai |
+| `prefers-reduced-motion` | User ki reduced motion preference detect karta hai |
+| `hover` | Check karta hai ki primary input hover support karta hai ya nahi |
+| `pointer` | Pointer accuracy detect karta hai, jaise coarse ya fine |
 
 ## 1. Max Width
 
-Applies styles when the viewport is at or below a specified width.
+Jab viewport specified width ke equal ya usse chhota hota hai, tab styles apply hoti hain.
 
 ```css
 @media (max-width: 768px) {
@@ -3098,7 +3102,7 @@ Applies styles when the viewport is at or below a specified width.
 
 ## 2. Min Width
 
-Applies styles when the viewport is at or above a specified width.
+Jab viewport specified width ke equal ya usse bada hota hai, tab styles apply hoti hain.
 
 ```css
 @media (min-width: 768px) {
@@ -3142,7 +3146,7 @@ Applies styles when the viewport is at or above a specified width.
 
 ## Mobile-First Design
 
-Mobile-first means designing for smaller screens first and then adding styles for larger screens.
+Mobile-first approach ka matlab hai ki pehle small screens ke liye design aur CSS likhi jati hai. Uske baad larger screens ke liye media queries add ki jati hain.
 
 ### Example
 
@@ -3175,13 +3179,13 @@ Mobile-first means designing for smaller screens first and then adding styles fo
 
 # 32. CSS Variables
 
-CSS variables are also called **CSS Custom Properties**.
+CSS Variables ko **CSS Custom Properties** bhi kaha jata hai.
 
-They store reusable values such as colors, spacing, font sizes and border radius.
+Inka use colors, spacing, font sizes aur border radius jaise reusable values ko store karne ke liye hota hai.
 
 ## Defining Variables
 
-Variables are commonly defined inside the `:root` selector.
+Variables commonly `:root` selector ke andar define ki jati hain.
 
 ```css
 :root {
@@ -3194,7 +3198,7 @@ Variables are commonly defined inside the `:root` selector.
 
 ## Using Variables
 
-Use the `var()` function to access a variable.
+Variable ki value access karne ke liye `var()` function use hota hai.
 
 ```css
 .button {
@@ -3213,7 +3217,7 @@ Use the `var()` function to access a variable.
 }
 ```
 
-If `--secondary-color` is not defined, the fallback value `black` is used.
+Agar `--secondary-color` define nahi hai, toh fallback value `black` use hogi.
 
 ## Variables Inside a Selector
 
@@ -3224,25 +3228,25 @@ If `--secondary-color` is not defined, the fallback value `black` is used.
 }
 ```
 
-**Note:** CSS custom properties follow the cascade and inheritance rules.
+**Note:** CSS Custom Properties cascade aur inheritance rules ko follow karti hain.
 
 ---
 
 # 33. Logical Properties
 
-Logical properties follow the writing direction instead of fixed left/right or top/bottom directions.
+CSS Logical Properties fixed left/right ya top/bottom directions ke bajay writing direction ko follow karti hain.
 
-They are useful for supporting different languages and writing modes.
+Inka use different languages aur writing modes ke liye layouts support karne mein helpful hota hai.
 
 ## Common Logical Properties
 
 | Property | Use |
 |---|---|
-| `margin-inline` | Inline-start/end outer spacing |
-| `padding-inline` | Inline-start/end inner spacing |
-| `margin-block` | Block-start/end outer spacing |
-| `padding-block` | Block-start/end inner spacing |
-| `border-inline` | Inline-start/end borders |
+| `margin-inline` | Inline-start aur inline-end outer spacing |
+| `padding-inline` | Inline-start aur inline-end inner spacing |
+| `margin-block` | Block-start aur block-end outer spacing |
+| `padding-block` | Block-start aur block-end inner spacing |
+| `border-inline` | Inline-start aur inline-end borders |
 | `inset-inline` | Logical inline positioning |
 | `inset-block` | Logical block positioning |
 | `inline-size` | Logical width |
@@ -3273,30 +3277,30 @@ They are useful for supporting different languages and writing modes.
 
 # 34. Accessibility and Best Practices
 
-Writing good CSS is not only about making a website beautiful. It is also important to make it usable and accessible.
+Achhi CSS likhne ka purpose sirf website ko beautiful banana nahi hai. Website ko usable aur accessible banana bhi important hai.
 
 ## Do's
 
-- Use external CSS for most project styles.
-- Prefer reusable classes and meaningful names.
-- Organize CSS by component or section.
-- Test layouts at different screen sizes.
-- Keep keyboard focus visible.
-- Ensure sufficient text and background contrast.
-- Respect `prefers-reduced-motion` for non-essential animations.
-- Add meaningful alt text in HTML for images.
-- Use consistent spacing and typography.
-- Use flexible layouts instead of fixed widths where possible.
+- Most project styles ke liye external CSS use karein.
+- Reusable classes aur meaningful names prefer karein.
+- CSS ko component ya section ke according organize karein.
+- Different screen sizes par layouts test karein.
+- Keyboard focus ko visible rakhein.
+- Text aur background ke beech sufficient contrast rakhein.
+- Non-essential animations ke liye `prefers-reduced-motion` respect karein.
+- HTML images ke liye meaningful alt text add karein.
+- Spacing aur typography consistent rakhein.
+- Jahan possible ho, fixed widths ke bajay flexible layouts use karein.
 
 ## Don'ts
 
-- Don't memorize every property before building projects.
-- Don't use `!important` everywhere.
-- Don't remove focus outlines without providing a replacement.
-- Don't rely only on color to communicate meaning.
-- Don't use fixed widths that break small screens.
-- Don't use CSS as a replacement for semantic HTML.
-- Don't overuse animations and visual effects.
+- Har property memorize karne ke bajay projects banakar practice karein.
+- Har jagah `!important` use na karein.
+- Focus outlines ko replacement ke bina remove na karein.
+- Information communicate karne ke liye sirf color par depend na karein.
+- Aisi fixed widths use na karein jo small screens par layout break kar dein.
+- Semantic HTML ke replacement ke roop mein CSS use na karein.
+- Animations aur visual effects ka unnecessary use na karein.
 
 ## Reduced Motion Example
 
@@ -3316,7 +3320,7 @@ Writing good CSS is not only about making a website beautiful. It is also import
 
 # 35. Practical Project 1 — Product Card
 
-In this project, we will create a simple product card using HTML and CSS.
+Is project mein hum HTML aur CSS ki help se ek simple Product Card create karenge.
 
 ## HTML
 
@@ -3423,7 +3427,7 @@ button:hover {
 
 # 36. Practical Project 2 — Responsive Navbar
 
-In this project, we will create a responsive navigation bar using Flexbox and Media Queries.
+Is project mein hum Flexbox aur Media Queries ki help se ek Responsive Navigation Bar create karenge.
 
 ## HTML
 
@@ -3510,106 +3514,106 @@ In this project, we will create a responsive navigation bar using Flexbox and Me
 
 | Property | Use |
 |---|---|
-| `color` | Text color |
-| `background` | Background shorthand |
-| `font-family` | Typeface |
-| `font-size` | Text size |
-| `font-weight` | Text thickness |
-| `line-height` | Line spacing |
-| `text-align` | Text alignment |
-| `width` | Element width |
-| `height` | Element height |
-| `max-width` | Maximum width |
-| `margin` | Outer spacing |
-| `padding` | Inner spacing |
-| `border` | Border |
-| `border-radius` | Rounded corners |
-| `box-shadow` | Shadow |
-| `display` | Layout behaviour |
-| `position` | Positioning mode |
-| `top` | Top position offset |
-| `right` | Right position offset |
-| `bottom` | Bottom position offset |
-| `left` | Left position offset |
-| `z-index` | Stacking order |
-| `overflow` | Overflow handling |
-| `gap` | Layout gaps |
-| `flex` | Flex item sizing |
-| `justify-content` | Main-axis/content alignment |
-| `align-items` | Item alignment |
-| `grid-template-columns` | Grid columns |
-| `object-fit` | Image/video fitting |
-| `opacity` | Transparency |
-| `cursor` | Cursor appearance |
-| `transition` | Smooth state change |
-| `transform` | Move, rotate, scale and skew |
-| `animation` | Keyframe animation |
-| `@media` | Responsive styles |
-| `var()` | Uses a CSS variable |
+| `color` | Text color set karta hai |
+| `background` | Background ki shorthand property |
+| `font-family` | Font typeface set karta hai |
+| `font-size` | Text size set karta hai |
+| `font-weight` | Text thickness set karta hai |
+| `line-height` | Lines ke beech spacing set karta hai |
+| `text-align` | Text alignment set karta hai |
+| `width` | Element ki width set karta hai |
+| `height` | Element ki height set karta hai |
+| `max-width` | Maximum width set karta hai |
+| `margin` | Outer spacing set karta hai |
+| `padding` | Inner spacing set karta hai |
+| `border` | Border set karta hai |
+| `border-radius` | Corners round karta hai |
+| `box-shadow` | Shadow add karta hai |
+| `display` | Layout behaviour control karta hai |
+| `position` | Positioning mode set karta hai |
+| `top` | Top position offset set karta hai |
+| `right` | Right position offset set karta hai |
+| `bottom` | Bottom position offset set karta hai |
+| `left` | Left position offset set karta hai |
+| `z-index` | Stacking order control karta hai |
+| `overflow` | Extra content ka behaviour control karta hai |
+| `gap` | Layout items ke beech gap set karta hai |
+| `flex` | Flex item sizing control karta hai |
+| `justify-content` | Main-axis/content alignment control karta hai |
+| `align-items` | Items ki alignment control karta hai |
+| `grid-template-columns` | Grid columns define karta hai |
+| `object-fit` | Image/video fitting control karta hai |
+| `opacity` | Transparency set karta hai |
+| `cursor` | Cursor appearance set karta hai |
+| `transition` | Smooth state changes create karta hai |
+| `transform` | Move, rotate, scale aur skew karta hai |
+| `animation` | Keyframe animation apply karta hai |
+| `@media` | Responsive styles apply karta hai |
+| `var()` | CSS variable ki value use karta hai |
 
 ---
 
 # 38. CSS Learning Checklist
 
-Use this checklist to track your CSS learning progress.
+Is checklist ka use apni CSS learning progress track karne ke liye karein.
 
 ## CSS Fundamentals
 
-- [ ] Understand CSS syntax.
-- [ ] Understand inline, internal and external CSS.
-- [ ] Practise element, class and ID selectors.
-- [ ] Understand pseudo-classes and pseudo-elements.
-- [ ] Understand cascade, specificity and inheritance.
+- [ ] CSS syntax samjhein.
+- [ ] Inline, Internal aur External CSS samjhein.
+- [ ] Element, Class aur ID selectors ki practice karein.
+- [ ] Pseudo-Classes aur Pseudo-Elements samjhein.
+- [ ] Cascade, Specificity aur Inheritance samjhein.
 
 ## Styling Fundamentals
 
-- [ ] Practise CSS colors.
-- [ ] Understand background properties.
-- [ ] Practise CSS units.
-- [ ] Understand width and height.
-- [ ] Understand the CSS Box Model.
-- [ ] Practise margin and padding.
-- [ ] Practise borders and outlines.
+- [ ] CSS Colors ki practice karein.
+- [ ] Background Properties samjhein.
+- [ ] CSS Units ki practice karein.
+- [ ] Width aur Height samjhein.
+- [ ] CSS Box Model samjhein.
+- [ ] Margin aur Padding ki practice karein.
+- [ ] Borders aur Outlines ki practice karein.
 
 ## Text and Layout
 
-- [ ] Understand font properties.
-- [ ] Practise text properties.
-- [ ] Understand display properties.
-- [ ] Practise visibility and overflow.
-- [ ] Understand CSS positioning.
-- [ ] Build layouts using Flexbox.
-- [ ] Build layouts using CSS Grid.
+- [ ] Font Properties samjhein.
+- [ ] Text Properties ki practice karein.
+- [ ] Display Properties samjhein.
+- [ ] Visibility aur Overflow ki practice karein.
+- [ ] CSS Positioning samjhein.
+- [ ] Flexbox se layouts banayein.
+- [ ] CSS Grid se layouts banayein.
 
 ## Advanced CSS
 
-- [ ] Practise image and media properties.
-- [ ] Style lists and tables.
-- [ ] Style forms and controls.
-- [ ] Practise cursor and interaction properties.
-- [ ] Understand shadows and filters.
-- [ ] Practise transforms.
-- [ ] Understand transitions.
-- [ ] Create animations using keyframes.
-- [ ] Make websites responsive.
-- [ ] Understand CSS variables.
-- [ ] Practise logical properties.
+- [ ] Image aur Media Properties ki practice karein.
+- [ ] Lists aur Tables ko style karein.
+- [ ] Forms aur Controls ko style karein.
+- [ ] Cursor aur Interaction Properties ki practice karein.
+- [ ] Shadows aur Filters samjhein.
+- [ ] Transforms ki practice karein.
+- [ ] Transitions samjhein.
+- [ ] Keyframes se Animations create karein.
+- [ ] Websites ko responsive banayein.
+- [ ] CSS Variables samjhein.
+- [ ] Logical Properties ki practice karein.
 
 ## Practical Skills
 
-- [ ] Build a product card.
-- [ ] Build a responsive navbar.
-- [ ] Create a responsive image gallery.
-- [ ] Create a login form.
-- [ ] Build a responsive landing page.
-- [ ] Practise without copying every line.
-- [ ] Learn to use CSS documentation.
+- [ ] Product Card banayein.
+- [ ] Responsive Navbar banayein.
+- [ ] Responsive Image Gallery create karein.
+- [ ] Login Form create karein.
+- [ ] Responsive Landing Page banayein.
+- [ ] Har line copy kiye bina practice karein.
+- [ ] CSS documentation use karna seekhein.
 
 ---
 
 # 39. Useful Resources
 
-Use these official resources when you want to understand a CSS property in more detail.
+CSS ki kisi property ko detail mein samajhne ke liye ye resources use kar sakte hain.
 
 1. **MDN CSS Reference:**  
    https://developer.mozilla.org/en-US/docs/Web/CSS/Reference
