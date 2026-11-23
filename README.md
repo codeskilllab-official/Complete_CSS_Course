@@ -404,6 +404,33 @@ Jab mouse pointer link ke upar jayega, tab us link ka color red ho jayega.
 
 ### Example 1 — Hover
 
+---
+
+**index.html**
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Button Hover Effect</title>
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>CSS Hover Effect</h1>
+
+    <button>Hover Me</button>
+
+</body>
+</html>
+```
+**style.css**
+
 ```css
 button:hover {
     background-color: blue;
@@ -411,13 +438,21 @@ button:hover {
 }
 ```
 
+**Output:**
+
+<img src="assets/output_images/image1.png">
+
+
 ### Example 2 — First Child
+
+---
 
 ```css
 li:first-child {
     color: red;
 }
 ```
+---
 
 ### Example 3 — Last Child
 
@@ -3631,5 +3666,6 @@ CSS ki kisi property ko detail mein samajhne ke liye ye resources use kar sakte 
 
 ---
 
-<p align="center"><strong>END OF CSS NOTES</strong></p>
-<p align="center">Keep Practising. Keep Building. Keep Improving.</p>
+<p align="center">
+    <a href="#top">↑ Back to Top</a>
+</p>
