@@ -145,7 +145,6 @@ Inline CSS mein CSS ko directly HTML element ke andar `style` attribute ki help 
 **Output :**
 
 <img src="assets/output_images/image2.png" width="600" height="250">
-<br>
 
 **Use:** Jab kisi specific HTML element par styling apply karni ho.
 
@@ -179,7 +178,6 @@ Internal CSS mein CSS ko HTML document ke andar `<style>` element mein likha jat
 **Output :**
 
 <img src="assets/output_images/image2.png" width="600" height="250">
-<br><br>
 
 **Use:** Jab sirf ek HTML page ko style karna ho.
 
@@ -217,7 +215,6 @@ h1 {
 **Output :**
 
 <img src="assets/output_images/image3.png" width="600" height="250">
-<br><br>
 
 **Use:** Multiple pages wali websites ke liye ye best method hai, kyunki ek hi CSS file se multiple HTML pages ko style kiya ja sakta hai.
 
