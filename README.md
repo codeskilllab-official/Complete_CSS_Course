@@ -99,7 +99,7 @@ h1 {
 
 **Output :**
 
-<img src="/Users/sumit/MERN Stack Developer/Frontend/assets/output_images/image1.png" width="600" height="250">
+<img src="assets/output_images/image1.png" width="600" height="250">
 
 ### Key Components
 
@@ -144,7 +144,7 @@ Inline CSS mein CSS ko directly HTML element ke andar `style` attribute ki help 
 
 **Output :**
 
-<img src="/Users/sumit/MERN Stack Developer/Frontend/assets/output_images/image2.png" width="600" height="250">
+<img src="assets/output_images/image2.png" width="600" height="250">
 
 <br>
 
@@ -179,7 +179,7 @@ Internal CSS mein CSS ko HTML document ke andar `<style>` element mein likha jat
 
 **Output :**
 
-<img src="/Users/sumit/MERN Stack Developer/Frontend/assets/output_images/image2.png" width="600" height="250">
+<img src="assets/output_images/image2.png" width="600" height="250">
 
 <br>
 
@@ -218,7 +218,7 @@ h1 {
 
 **Output :**
 
-<img src="/Users/sumit/MERN Stack Developer/Frontend/assets/output_images/image3.png" width="600" height="250">
+<img src="assets/output_images/image3.png" width="600" height="250">
 
 <br>
 
