@@ -66,14 +66,6 @@ CSS ki help se hum webpage ke elements ka color, size, spacing, position aur ove
 - Transitions and animations
 - Responsive website layouts
 
-### HTML, CSS and JavaScript
-
-| Technology | Purpose |
-|---|---|
-| HTML | Webpage ka structure banata hai |
-| CSS | Webpage ki styling aur layout control karta hai |
-| JavaScript | Webpage mein behaviour aur interactivity add karta hai |
-
 ---
 
 # 2. Basic CSS Syntax
