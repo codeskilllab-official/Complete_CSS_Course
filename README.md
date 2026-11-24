@@ -402,7 +402,7 @@ Jab mouse pointer link ke upar jayega, tab us link ka color red ho jayega.
 | `:root` | Root HTML element |
 | `:empty` | Aisa element jiske andar koi child nahi hai |
 
-### Example 1 — Hover
+### Pseudo-Classes 1 — Hover
 
 ---
 
